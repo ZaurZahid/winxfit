@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+select {
+    -webkit-appearance: none;
+    /* Remove default styling for Safari */
+    -moz-appearance: none;
+    /* Remove default styling for Firefox */
+    appearance: none;
+    /* Remove default styling for modern browsers */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Interactive map */
+
+.selected {
+    fill: #f1c40f !important;
+    stroke: #f1c40f !important;
+}
+
+[id*="click"] {
+    cursor: pointer;
+    transition:
+        fill 0.2s ease-in-out,
+        stroke 0.2s ease-in-out;
+}
+
+[id*="click"]:hover {
+    fill: #60a5fa;
+    stroke: #2563eb;
+}
+
+
+/* Map controls */
+.map-controls {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 10;
+}
+
+.zoom-btn {
+    padding: 0;
+    border: none;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease-in-out;
+}
+
+.zoom-btn:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-icon {
+    width: 44px;
+    height: 44px;
+    padding: 0.5rem;
+}
