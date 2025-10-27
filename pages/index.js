@@ -11,7 +11,7 @@ import ContactForm from '../src/components/layout/ContactForm'
 import { useTranslation } from 'next-i18next'
 import { fetchFromAPI } from './../src/hooks/apiFetcher';
 
-export default function HomePage({ shoppingCenters, faqData, siteData, onboardingData, featureData, blogsData, error }) {
+export default function HomePage({ error }) {
   const { t } = useTranslation('common')
 
   if (error) {
@@ -19,58 +19,68 @@ export default function HomePage({ shoppingCenters, faqData, siteData, onboardin
   }
 
   return (
-    <Layout siteData={siteData}>
-      <Head>
-        <title>AllVer | {t('navigation.home')}</title>
-        <meta name="description" content="This is a description of home page." />
-      </Head>
+    <Layout>
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is em Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
+      Lorem Ipsum is a type of placeholder text commonly used in the design and publishing industries. It is derived from a work by the Roman statesman and philosopher Cicero, specifically from "De finibus bonorum et malorum," and has been altered to create nonsensical Latin phrases.
 
-      <OnboardingSection centers={shoppingCenters} />
+      {/* <OnboardingSection centers={shoppingCenters} />
       <ValueSection features={featureData} />
       <HowItWorks onboardingData={onboardingData} />
       <TradeCenters centers={shoppingCenters} />
       <Fags fags={faqData} />
       <BlogSection blogsData={blogsData} />
-      <ContactForm siteData={siteData} />
+      <ContactForm siteData={siteData} /> */}
     </Layout>
   );
 }
 
-export async function getServerSideProps({ locale }) {
-  try {
-    const [faqData, featureData, siteData, onboardingData, shoppingCenters, blogsData] = await Promise.all([
-      fetchFromAPI('/api/v1/support/faq/', locale),
-      fetchFromAPI('/api/v1/support/feature/', locale),
-      fetchFromAPI('/api/v1/support/site/', locale),
-      fetchFromAPI('/api/v1/support/onboarding/', locale),
-      fetchFromAPI('/api/v1/shop/shopping-centers/', locale),
-      fetchFromAPI('/api/v1/support/blog/?page=1&per_page=3', locale),
-    ]);
-    return {
-      props: {
-        ...(await serverSideTranslations(locale, ['common'])),
-        faqData,
-        featureData,
-        siteData,
-        onboardingData,
-        shoppingCenters,
-        blogsData: blogsData?.results || []
-      },
-    };
-  } catch (error) {
-    console.error('Error in getServerSideProps:', error);
-
-    return {
-      props: {
-        ...(await serverSideTranslations(locale, ['common'])),
-        faqData: null,
-        featureData: null,
-        siteData: null,
-        onboardingData: null,
-        shoppingCenters: null,
-        blogsData: null,
-        error: 'Failed to load data.',
-      },
-    };
+export async function getServerSideProps({ locale, req  }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+    }
   }
 }

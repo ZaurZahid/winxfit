@@ -1,5 +1,4 @@
 import Head from "next/head";
-import blogsMock from "../../mock/blog";
 import Layout from '../../src/components/layout/Layout';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'

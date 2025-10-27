@@ -1,13 +1,13 @@
 {
   "navigation": {
-    "home": "Home",
     "about": "About Us",
-    "features": "Main Features",
-    "shopping_centers": "Shopping Centers",
+    "features": "Features",
+    "competitions": "Competitions",
+    "how_it_works": "How It Works",
+    "membership": "Membership",
     "faq": "FAQ",
-    "blog": "Blog",
-    "contact": "Contact",
-    "join": "Join Us"
+    "blog": "Blog/News",
+    "contact": "Contact Us"
   },
   "onboarding": {
     "title_header": "Bringing",
@@ -144,12 +144,13 @@
     }
   },
   "buttons": {
+    "join_the_list": "Join to waitlist",
+
     "register_now": "Register Now",
     "about_us": "About Us",
     "contact_us": "Contact Us",
     "read_more": "Read More",
     "send_now": "Send",
-    "join_the_list": "Join the List",
     "sending": "Sending",
     "decline": "Decline",
     "accept": "Accept",

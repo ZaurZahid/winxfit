@@ -7,14 +7,13 @@ module.exports = {
     extend: {
       colors: {
         'dark': '#000000',
-        'gray': '#595959',
+        'light-gray': '#595959',
+        'orange': '#E37627'
       },
       fontFamily: {
         'primary': ['Helvetica Neue', 'sans-serif']
       },
       fontSize: {
-        'section-lg-title-responsive': ['clamp(2.25rem, 6vw, 5rem)', { lineHeight: '1.1', fontWeight: '700' }],// 40px mobile, 80px tablet, 80px desktop
-
         // Responsive heading sizes
         'h1-responsive': ['clamp(2.5rem, 5vw, 3.75rem)', { lineHeight: '1.2', fontWeight: '700' }], // 40px mobile, 60px tablet, 60px desktop
         'h2-responsive': ['clamp(2rem, 4vw, 3rem)', { lineHeight: '1.3', fontWeight: '600' }], // 32px mobile, 48px tablet, 48px desktop
