@@ -31,7 +31,8 @@ const Layout = ({ children }) => {
                     </main>
                 </div>
             </div>
-
+            <Footer />
+            
             {/* <Footer siteData={siteData} />
             <CookieConsent />
             <JoinListModal onSuccess={onJoinSuccess} joined={joined} opened={joinModalOpen} onClose={onCloseJoinModal} /> */}

@@ -101,10 +101,12 @@
   },
   "footer": {
     "copyright": "All rights reserved",
+    "description":"Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete",
     "links": {
-      "privacyPolicy": "Privacy Policy",
-      "termsOfUse": "Terms of Use"
-    }
+      "termsPrivacy": "Terms and privacy policy",
+      "faq":"FAQ",
+    "about": "About Us"
+      }
   },
   "joinListModal": {
     "header": {
