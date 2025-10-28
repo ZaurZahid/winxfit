@@ -143,103 +143,105 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="py-8 lg:py-16 scroll-mt-20 lg:scroll-mt-28"
+      className="w-full flex justify-center py-8 lg:py-16 scroll-mt-24 lg:scroll-mt-28"
     >
-      <div className="flex flex-wrap lg:flex-nowrap gap-12">
-        {/* Left Section */}
-        <div className="flex flex-col justify-between lg:max-w-lg">
-          <div>
-            <div className="flex items-center gap-3">
-              <div className="relative inline-flex text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-                <h4 className="max-w-[90%] lg:max-w-[80%]">
-                  {t("joinListModal.header.title")}
-                </h4>
-                <img
-                  src="/thinking-face.png"
-                  alt="thinking-face"
-                  className="absolute top-1/2 -translate-y-1/2 right-8 lg:right-12 w-20 h-20 md:w-24 md:h-24"
-                />
+      <div className="max-w-[1440px] w-full px-6 sm:px-8 md:px-16 lg:px-20">
+        <div className="flex flex-wrap lg:flex-nowrap gap-12">
+          {/* Left Section */}
+          <div className="flex flex-col justify-between lg:max-w-lg">
+            <div>
+              <div className="flex items-center gap-3">
+                <div className="relative inline-flex text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+                  <h4 className="max-w-[90%] lg:max-w-[80%]">
+                    {t("joinListModal.header.title")}
+                  </h4>
+                  <img
+                    src="/thinking-face.png"
+                    alt="thinking-face"
+                    className="absolute top-1/2 -translate-y-1/2 right-8 lg:right-12 w-20 h-20 md:w-24 md:h-24"
+                  />
+                </div>
               </div>
+              <h3 className="text-xl lg:text-2xl mt-1 font-normal text-gray-500">
+                {t("joinListModal.header.subtitle")}
+              </h3>
             </div>
-            <h3 className="text-xl lg:text-2xl mt-1 font-normal text-gray-500">
-              {t("joinListModal.header.subtitle")}
-            </h3>
+            <div className="mt-10 mb-2 hidden lg:flex">{followUsContent}</div>
           </div>
-          <div className="mt-10 mb-2 hidden lg:flex">{followUsContent}</div>
-        </div>
 
-        {/* Right Section (Form) */}
-        <div className="flex flex-col flex-grow">
-          <div className="bg-white flex-grow rounded-3xl shadow-lg p-6 lg:p-8 lg:ml-4 xl:ml-8">
-            <form onSubmit={handleSubmit}>
-              <div className="w-full md:flex">
-                <Input
-                  IconComponent={
-                    <SmsIcon
-                      strokeColor={
-                        formState.errors.email
-                          ? "stroke-red-400"
-                          : "stroke-current"
-                      }
-                    />
-                  }
-                  type="email"
-                  label={t("form.email")}
-                  placeholder={t("form.email_placeholder")}
-                  value={formState.email}
-                  onChange={(e) => handleChange("email", e.target.value)}
-                  error={formState.errors.email}
+          {/* Right Section (Form) */}
+          <div className="flex flex-col flex-grow">
+            <div className="bg-white flex-grow rounded-3xl shadow-lg p-6 lg:p-8 lg:ml-4 xl:ml-8">
+              <form onSubmit={handleSubmit}>
+                <div className="w-full md:flex">
+                  <Input
+                    IconComponent={
+                      <SmsIcon
+                        strokeColor={
+                          formState.errors.email
+                            ? "stroke-red-400"
+                            : "stroke-current"
+                        }
+                      />
+                    }
+                    type="email"
+                    label={t("form.email")}
+                    placeholder={t("form.email_placeholder")}
+                    value={formState.email}
+                    onChange={(e) => handleChange("email", e.target.value)}
+                    error={formState.errors.email}
+                    required
+                    classes={{ root: "mb-4 md:mb-0" }}
+                  />
+                  <Input
+                    IconComponent={
+                      <UserIcon
+                        strokeColor={
+                          formState.errors.name
+                            ? "stroke-red-400"
+                            : "stroke-current"
+                        }
+                      />
+                    }
+                    type="text"
+                    label={t("form.name")}
+                    placeholder={t("form.name_placeholder")}
+                    value={formState.fullname}
+                    onChange={(e) => handleChange("fullname", e.target.value)}
+                    error={formState.errors.fullname}
+                    required
+                    classes={{ root: "md:ml-8" }}
+                  />
+                </div>
+                <Textarea
+                  label={t("form.message")}
+                  placeholder={t("form.message_placeholder")}
+                  value={formState.message}
+                  onChange={(e) => handleChange("message", e.target.value)}
+                  error={formState.errors.message}
                   required
-                  classes={{ root: "mb-4 md:mb-0" }}
+                  classes={{ root: "mt-4", input: "bg-gray-100" }}
+                  maxLength="200"
                 />
-                <Input
-                  IconComponent={
-                    <UserIcon
-                      strokeColor={
-                        formState.errors.name
-                          ? "stroke-red-400"
-                          : "stroke-current"
-                      }
-                    />
+                <Button
+                  text={
+                    formState.loading
+                      ? t("buttons.sending")
+                      : t("buttons.send_now")
                   }
-                  type="text"
-                  label={t("form.name")}
-                  placeholder={t("form.name_placeholder")}
-                  value={formState.fullname}
-                  onChange={(e) => handleChange("fullname", e.target.value)}
-                  error={formState.errors.fullname}
-                  required
-                  classes={{ root: "md:ml-8" }}
+                  type="submit"
+                  disabled={formState.loading || hasErrors()}
+                  classes={`mt-8 text-white bg-black hover:bg-orange`}
                 />
-              </div>
-              <Textarea
-                label={t("form.message")}
-                placeholder={t("form.message_placeholder")}
-                value={formState.message}
-                onChange={(e) => handleChange("message", e.target.value)}
-                error={formState.errors.message}
-                required
-                classes={{ root: "mt-4", input: "bg-gray-100" }}
-                maxLength="200"
-              />
-              <Button
-                text={
-                  formState.loading
-                    ? t("buttons.sending")
-                    : t("buttons.send_now")
-                }
-                type="submit"
-                disabled={formState.loading || hasErrors()}
-                classes={`mt-8 text-white bg-black hover:bg-orange`}
-              />
-              {formState.successMessage && (
-                <p className="mt-4 text-green-500">
-                  {formState.successMessage}
-                </p>
-              )}
-            </form>
+                {formState.successMessage && (
+                  <p className="mt-4 text-green-500">
+                    {formState.successMessage}
+                  </p>
+                )}
+              </form>
+            </div>
+            <div className="mt-10 lg:hidden">{followUsContent}</div>
           </div>
-          <div className="mt-10 lg:hidden">{followUsContent}</div>
         </div>
       </div>
     </section>

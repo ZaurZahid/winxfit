@@ -2,58 +2,97 @@ import { useState } from "react";
 import Button from "./Button";
 import CloseIcon from "./icons/Close";
 
-const Accordion = ({ data }) => {
-    const [activeIndex, setActiveIndex] = useState(null);
+const Accordion = ({ data: mockFaq }) => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(mockFaq[0].section);
 
-    const toggleAccordion = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
-    };
+  const categories = mockFaq.map((faq) => faq.section);
+  const filteredFAQs =
+    mockFaq.find((faq) => faq.section === selectedCategory)?.items || [];
 
-    return (
-        <div className="w-full">
-            {data.map((item, index) => (
-                <div
-                    key={index}
-                    className={`mb-4 ${index === data.length - 1 ? "mb-0" : ""}`} // Add margin-bottom for all except the last
-                >
-                    <div
-                        className={`cursor-pointer rounded-2xl transition-all duration-300 ease-in-out ${activeIndex === index ? "bg-white shadow-md" : ""
-                            }`}
-                        onClick={() => toggleAccordion(index)}
-                    >
-                        {/* Header */}
-                        <div className="flex items-center justify-between p-4 relative">
-                            <div className="flex lg:items-center">
-                                <span className="text-blue-600 font-bold text-3xl mr-4">
-                                    {index + 1}
-                                </span>
-                                <h3 className="text-gray-900 font-semibold text-lg mr-20">{item.question}</h3>
-                            </div>
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
-                            <Button
-                                text=""
-                                IconComponent={<CloseIcon fillColor={activeIndex === index ? "fill-white" : "fill-blue-600"} />}
-                                onClick={() => toggleAccordion(index)}
-                                classes={`absolute right-4 top-4 rounded-full !px-1 !pr-3 flex items-center justify-center ${activeIndex === index ? "bg-blue-600 hover:bg-blue-500 rotate-90" : "bg-gray-200 hover:bg-gray-300 rotate-45"}`}
-                            />
-                        </div>
+  return (
+    <div className="w-full">
+      <div className="flex flex-wrap gap-3 mb-12">
+        {categories.map((category) => (
+          <button
+            key={category}
+            onClick={() => {
+              setActiveIndex(null);
+              setTimeout(() => {
+                setSelectedCategory(category);
+              }, 100);
+            }}
+            className={`px-5 py-2.5 rounded-md text-sm font-medium transition-colors ${
+              selectedCategory === category
+                ? "bg-orange text-white"
+                : "hover:bg-gray-300"
+            }`}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+      {filteredFAQs.map((item, index) => (
+        <div
+          key={index}
+          className={`mb-4 ${index === filteredFAQs.length - 1 ? "mb-0" : ""}`} // Add margin-bottom for all except the last
+        >
+          <div
+            className={`cursor-pointer rounded-2xl transition-all duration-300 ease-in-out ${
+              activeIndex === index ? "bg-white shadow-md" : "bg-[#F5F5F5]"
+            }`}
+            onClick={() => toggleAccordion(index)}
+          >
+            {/* Header */}
+            <div className="flex items-center justify-between p-4 relative">
+              <div className="flex lg:items-center">
+                <span className="text-blue-600 font-bold text-3xl mr-4">
+                  {index + 1}
+                </span>
+                <h3 className="text-gray-900 font-semibold text-lg mr-20">
+                  {item.question}
+                </h3>
+              </div>
 
-                        {/* Content */}
-                        <div
-                            className={`overflow-hidden transition-all duration-500 ease-in-out ${activeIndex === index ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
-                                }`}
-                        >
-                            <div className="p-4 pt-0 pl-11">
-                                <p className="text-gray-700 text-base mr-20">
-                                    {item.answer}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            ))}
+              <Button
+                text=""
+                IconComponent={
+                  <CloseIcon
+                    fillColor={
+                      activeIndex === index ? "fill-white" : "fill-light-gray"
+                    }
+                  />
+                }
+                onClick={() => toggleAccordion(index)}
+                classes={`absolute right-4 top-4 rounded-full !px-1 !pr-3 flex items-center justify-center ${
+                  activeIndex === index
+                    ? "bg-blue-600 hover:bg-blue-500 rotate-90"
+                    : "bg-gray-200 hover:bg-gray-300 rotate-45"
+                }`}
+              />
+            </div>
+
+            {/* Content */}
+            <div
+              className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                activeIndex === index
+                  ? "max-h-screen opacity-100"
+                  : "max-h-0 opacity-0"
+              }`}
+            >
+              <div className="p-4 pt-0 pl-11">
+                <p className="text-gray-700 text-base mr-20">{item.answer}</p>
+              </div>
+            </div>
+          </div>
         </div>
-    );
+      ))}
+    </div>
+  );
 };
 
 export default Accordion;

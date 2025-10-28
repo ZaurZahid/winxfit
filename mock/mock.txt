@@ -38,39 +38,6 @@ Response: -
         }
     ]
 
-    // TODO: - FAQ
-    [
-    {
-        "section": "General Questions",
-        "items": [
-            {
-                "id": 1,
-                "question": "How do I create an account?",
-                "answer": "Download the app and sign up using your email or social login."
-            },
-            {
-                "id": 2,
-                "question": "Is the app free to use?",
-                "answer": "Yes, basic competitions are free. Some premium features may require a subscription."
-            }
-        ]
-    },
-    {
-        "section": "Rewards",
-        "items": [
-            {
-                "id": 3,
-                "question": "How do I earn points?",
-                "answer": "Participate in competitions, complete challenges, and reach milestones to earn points."
-            },
-            {
-                "id": 4,
-                "question": "Can I redeem my points for cash?",
-                "answer": "Points can be redeemed for discounts, loyalty programs, or donations to charities."
-            }
-        ]
-    }
-    ]
 
 // TODO: - Contact Us
 
