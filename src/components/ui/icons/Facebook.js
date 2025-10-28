@@ -1,11 +1,23 @@
-import React from 'react';
+import React from "react";
 
 const Facebook = ({ className }) => {
-    return (
-        <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} >
-            <path d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        </svg>
-    );
+  return (
+    <svg
+      width="17"
+      height="29"
+      viewBox="0 0 17 29"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M15.6667 1H11.6667C9.89856 1 8.20286 1.70238 6.95262 2.95262C5.70238 4.20286 5 5.89856 5 7.66667V11.6667H1V17H5V27.6667H10.3333V17H14.3333L15.6667 11.6667H10.3333V7.66667C10.3333 7.31304 10.4738 6.97391 10.7239 6.72386C10.9739 6.47381 11.313 6.33333 11.6667 6.33333H15.6667V1Z"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </svg>
+  );
 };
 
 export default Facebook;

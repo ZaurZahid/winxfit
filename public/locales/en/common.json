@@ -101,17 +101,18 @@
   },
   "footer": {
     "copyright": "All rights reserved",
-    "description":"Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete",
+    "description": "Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete",
     "links": {
       "termsPrivacy": "Terms and privacy policy",
-      "faq":"FAQ",
-    "about": "About Us"
-      }
+      "faq": "FAQ",
+      "about": "About Us"
+    }
   },
   "joinListModal": {
     "header": {
-      "title": "Join the List",
-      "subtitle": "Placeholder text... Mauris vestibulum viverra fames blandit suspendisse elementum diam. Purus nisi vestibulum amet nibh. Auctor sed donec at in praesent turpis."
+      "title": "Do you have questions?",
+      "subtitle": "Don’t hesitate to ask now.",
+      "follow-us": "Follow us on social media:"
     },
     "success_message": {
       "title": "Congratulations! You have joined the waiting list!",
@@ -152,15 +153,15 @@
     "about_us": "About Us",
     "contact_us": "Contact Us",
     "read_more": "Read More",
-    "send_now": "Send",
+    "send_now": "Send message",
     "sending": "Sending",
     "decline": "Decline",
     "accept": "Accept",
     "share": "Share"
   },
   "form": {
-    "name": "Your Full Name",
-    "name_placeholder": "Enter your name",
+    "name": "Name and surname",
+    "name_placeholder": "Enter your name and surname",
     "email": "Email",
     "email_placeholder": "Enter your email",
     "message": "Your Message",
@@ -169,7 +170,7 @@
     "select": "Select",
     "required": "This field is required"
   },
-  "payment":{
+  "payment": {
     "success_message": "The transaction was successfully completed",
     "failure_message": "The transaction failed"
   }

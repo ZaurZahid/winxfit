@@ -9,19 +9,24 @@ const Textarea = ({
   error,
   classes: { root = "", input = "" },
   IconComponent,
-  maxLength=''
+  maxLength = "",
 }) => {
   return (
     <div className={`flex flex-col w-full ${root}`}>
       {label && (
-        <label className={`py-2 font-medium ${error ? "text-red-400" : "text-black"} `}>
+        <label
+          className={`py-2 font-medium ${
+            error ? "text-red-400" : "text-black"
+          } `}
+        >
           {label}
           {required && "*"}
         </label>
       )}
       <div
-        className={`rounded-md relative py-4 px-6 border ${error ? "bg-red-100 border-red-400" : "border-gray-400"
-          } ${input}`}
+        className={`rounded-md relative py-4 px-6 border ${
+          error ? "bg-red-100 border-red-400" : "border-gray-100"
+        } ${input}`}
       >
         <textarea
           placeholder={placeholder}
