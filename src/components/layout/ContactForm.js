@@ -191,7 +191,7 @@ export default function ContactForm() {
                     onChange={(e) => handleChange("email", e.target.value)}
                     error={formState.errors.email}
                     required
-                    classes={{ root: "mb-4 md:mb-0" }}
+                    classes={{ root: "mb-4 md:mb-0", input: "bg-gray-100" }}
                   />
                   <Input
                     IconComponent={
@@ -210,7 +210,7 @@ export default function ContactForm() {
                     onChange={(e) => handleChange("fullname", e.target.value)}
                     error={formState.errors.fullname}
                     required
-                    classes={{ root: "md:ml-8" }}
+                    classes={{ root: "md:ml-8", input: "bg-gray-100" }}
                   />
                 </div>
                 <Textarea

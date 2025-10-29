@@ -15,7 +15,7 @@ const Textarea = ({
     <div className={`flex flex-col w-full ${root}`}>
       {label && (
         <label
-          className={`py-2 font-medium ${
+          className={`text-sm py-2 font-medium ${
             error ? "text-red-400" : "text-black"
           } `}
         >
@@ -25,7 +25,7 @@ const Textarea = ({
       )}
       <div
         className={`rounded-md relative py-4 px-6 border ${
-          error ? "bg-red-100 border-red-400" : "border-gray-100"
+          error ? "bg-red-100 border-red-400" : "border-gray-400"
         } ${input}`}
       >
         <textarea
