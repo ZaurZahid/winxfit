@@ -10,14 +10,15 @@
     "contact": "Contact Us"
   },
   "onboarding": {
-    "title_header": "Bringing",
-    "title_header_span": "local shopping",
-    "title_footer": "to the digital age.",
-    "subtitle": "Easily find stores in Bina, Sederek, and Absheron shopping centers. Save time with the AllVer map and quickly discover nearby stores.",
-    "options": {
-      "seller": "I am a seller",
-      "buyer": "I am a buyer"
-    }
+    "title_header": "Be Ready to Transform Your Fitness Journey with WinxFit!"
+  },
+  "aboutus": {
+    "title_header": "We encourage healthy lifestyles through engaging fitness challenges",
+    "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards. Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete.",
+    "our_values": "Our Values",
+    "transparancy": "Transparancy",
+    "accessibility": "Accessibility",
+    "community": "Community"
   },
   "valuesSection": {
     "title_header": "AllVer",

@@ -25,7 +25,7 @@ const Textarea = ({
       )}
       <div
         className={`rounded-md relative py-4 px-6 border ${
-          error ? "bg-red-100 border-red-400" : "border-gray-400"
+          error ? "bg-red-100 border-red-100" : "border-gray-100"
         } ${input}`}
       >
         <textarea

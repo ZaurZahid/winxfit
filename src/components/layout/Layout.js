@@ -25,7 +25,9 @@ const Layout = ({ children }) => {
     <div className="bg-gray-100 relative">
       <div className="min-h-screen w-full flex justify-center overflow-hidden">
         <Header onOpen={onOpenJoinModal} />
-        <main className="w-full mt-28 sm:mt-40 xl:mt-28">{children}</main>
+        <main className="max-w-[1536px] w-full mt-28 sm:mt-40 xl:mt-28">
+          {children}
+        </main>
       </div>
       <Footer />
 

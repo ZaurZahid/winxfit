@@ -3,48 +3,75 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Helvetica Neue';
-    src:
-        url('/fonts/Idol/HelveticaNeueMedium.woff2') format('woff2'),
-        url('/fonts/Idol/HelveticaNeueMedium.woff') format('woff'),
-        url('/fonts/Idol/HelveticaNeueMedium.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Helvetica Neue";
+  src: url("/fonts/Idol/HelveticaNeueMedium.woff2") format("woff2"),
+    url("/fonts/Idol/HelveticaNeueMedium.woff") format("woff"),
+    url("/fonts/Idol/HelveticaNeueMedium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 select {
-    -webkit-appearance: none;
-    /* Remove default styling for Safari */
-    -moz-appearance: none;
-    /* Remove default styling for Firefox */
-    appearance: none;
-    /* Remove default styling for modern browsers */
+  -webkit-appearance: none;
+  /* Remove default styling for Safari */
+  -moz-appearance: none;
+  /* Remove default styling for Firefox */
+  appearance: none;
+  /* Remove default styling for modern browsers */
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .custom-cookie-scrollbar::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
 .custom-cookie-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 .custom-cookie-scrollbar::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius: 9999px;
-    border: 2px solid transparent;
-    /* Makes it blend in nicely */
-    background-clip: content-box;
+  background-color: white;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  /* Makes it blend in nicely */
+  background-clip: content-box;
 }
 
 /* Firefox support */
 .custom-cookie-scrollbar {
-    scrollbar-color: white transparent;
-    scrollbar-width: thin;
+  scrollbar-color: white transparent;
+  scrollbar-width: thin;
+}
+
+@keyframes float-right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+@keyframes float-left {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+}
+
+.animate-float-left {
+  animation: float-right 3s ease-in-out infinite;
+}
+
+.animate-float-right {
+  animation: float-left 3s ease-in-out infinite;
 }

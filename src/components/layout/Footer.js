@@ -11,12 +11,14 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-dark text-white mt-[7rem] md:mt-[9rem] lg:mt-[12rem] xl:mt-[15rem] pt-10 lg:pt-16 pb-8 z-10">
-      <div className="absolute -top-[2.5rem] md:-top-[5.2rem] lg:-top-[6.8rem] xl:-top-[10rem] z-1">
-        <img
-          src="/get-healthy-4x.png"
-          alt="Get healthy background"
-          className="object-cover object-center"
-        />
+      <div className="w-full relative">
+        <div className="absolute max-w-[1536px]  w-full left-1/2 -translate-x-1/2 -top-[5rem] md:-top-[8.2rem] lg:-top-[6.8rem] xl:-top-[13rem] z-1">
+          <img
+            src="/get-healthy-4x.png"
+            alt="Get healthy background"
+            className="object-cover object-center"
+          />
+        </div>
       </div>
 
       <div className="w-full flex justify-center">

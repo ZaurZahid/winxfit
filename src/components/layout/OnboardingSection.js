@@ -1,39 +1,185 @@
-import React from 'react';
-import Star from '../ui/icons/Star';
-import { useTranslation } from 'next-i18next';
-import AppDownloadButtons from '../ui/DownloadApps';
+import { useMemo, useState } from "react";
+import React from "react";
+import { useTranslation } from "next-i18next";
+import UserIcon from "./../ui/icons/User";
+import Input from "./../ui/Input";
+import SmsIcon from "./../ui/icons/Sms";
+import Button from "../ui/Button";
 
-function OnboardingSection({ centers }) {
-    const { t } = useTranslation('common');
+function OnboardingSection() {
+  const { t } = useTranslation("common");
+  const [formState, setFormState] = useState({
+    fullname: "",
+    email: "",
+    errors: {},
+    loading: false,
+    successMessage: null,
+  });
 
-    return (
-        <section className="relative pb-[24rem] sm:pb-[36rem] lg:pb-8 py-4 lg:py-12 h-[780px] rounded-3xl">
-            <div className="h-full flex flex-col lg:flex-row">
-                <div className="h-full flex flex-col justify-center m-auto max-w-md lg:max-w-sm xl:max-w-xl relative z-10">
-                    <h1 className="text-3xl font-bold mb-5">
-                        {t('onboarding.title_header')}
-                        <span className="bg-gradient-to-tr rounded-3xl px-3 lg:px-5 py-1 text-base sm:text-3xl mx-2 text-white inline-block transform -skew-y-3">
-                            {t('onboarding.title_header_span')}
-                        </span>
-                        <div className="block">{t('onboarding.title_footer')}</div>
-                    </h1>
-                    <p className="text-gray-600 mb-6">{t('onboarding.subtitle')}</p>
-                    <AppDownloadButtons />
-                </div>
+  const handleChange = (field, value) => {
+    // General handler for other fields
+    setFormState((prevState) => ({
+      ...prevState,
+      [field]: value,
+      errors: { ...prevState.errors, [field]: null },
+    }));
+  };
 
-                {/* Image Section */}
-                <div className="grow lg:ml-8 relative gb-gray-500">
-                    <img
-                        src="/phones-gradient-2x.png"
-                        alt="phones gradient"
-                        className="max-h-96 absolute top-6 left-1/2 transform -translate-x-1/2 sm:top-36 sm:right-48 sm:scale-[1.4] lg:top-36 lg:right-44 lg:scale-[2.1] xxl:right-0 z-10"
-                    />
-                </div>
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    setFormState((prevState) => ({
+      ...prevState,
+      loading: true,
+      successMessage: null,
+      errors: {},
+    }));
+
+    try {
+      console.log(formState);
+      // const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/support/contact/`, {
+      //     method: 'POST',
+      //     headers: { 'Content-Type': 'application/json', 'Accept-Language': i18n?.language || 'az' },
+      //     body: JSON.stringify({
+      //         fullname: formState.name,
+      //         email: formState.email,
+      //         phone: formattedPhone,
+      //         message: formState.message,
+      //     }),
+      // });
+
+      // if (!response.ok) {
+      //     if (response.status === 422) {
+      //         const errorData = await response.json();
+      //         setFormState((prevState) => ({
+      //             ...prevState,
+      //             errors: {
+      //                 name: errorData.fullname?.[0] || null,
+      //                 email: errorData.email?.[0] || null,
+      //                 phone: errorData.phone?.[0] || null,
+      //                 message: errorData.message?.[0] || null,
+      //             },
+      //             loading: false,
+      //         }));
+      //     } else {
+      //         throw new Error('Unexpected error');
+      //     }
+      //     return;
+      // }
+
+      setTimeout(() => {
+        setFormState({
+          fullname: "",
+          email: "",
+          message: "",
+          errors: {},
+          loading: false,
+          successMessage: t("joinListModal.success_message.title"),
+        });
+      }, 2000);
+    } catch (error) {
+      console.error("Error sending contact message:", error);
+      setFormState((prevState) => ({ ...prevState, loading: false }));
+    }
+  };
+
+  const hasErrors = () =>
+    Object.values(formState.errors).some(
+      (error) => error && error.trim() !== ""
+    );
+
+  return (
+    <div className="relative w-full flex justify-center mt-8 relative lg:py-16 scroll-mt-24 lg:scroll-mt-28 min-h-[950px] lg:min-h-[750px]">
+      <div className="max-w-[1440px] w-full px-6 sm:px-8 md:px-16 lg:px-20">
+        <div className="h-full flex flex-col lg:flex-row">
+          <div className="h-full flex flex-col lg:max-w-3xl min-w-[60%] relative z-20 border border-red-900">
+            <div className="flex flex-col sm:flex-row sm:items-center">
+              <img
+                src="/run-box.png"
+                alt="run box"
+                className="h-20 sm:h-40 w-20 sm:w-40 animate-float-left"
+              />
+              <h2 className="text-2xl sm:text-5xl font-bold sm:ml-5 max-w-3xl">
+                {t("onboarding.title_header")}
+              </h2>
             </div>
 
-            <img src="/onboarding-pattern-4x.png" alt="onboarding pattern" className='absolute left-0 bottom-0 -top-28 md:-top-40 xl:-top-28 w-full h-[78rem] md:h-[80rem] lg:h-[90rem] object-cover' />
-        </section>
-    );
+            <div className="bg-white lg:w-[110%] w-full absolute top-36 sm:top-44 lg:top-36 rounded-3xl shadow-lg p-6 lg:p-8 mt-14">
+              <form onSubmit={handleSubmit}>
+                <div className="w-full md:flex">
+                  <Input
+                    IconComponent={
+                      <SmsIcon
+                        strokeColor={
+                          formState.errors.email
+                            ? "stroke-red-400"
+                            : "stroke-current"
+                        }
+                      />
+                    }
+                    type="email"
+                    label={t("form.email")}
+                    placeholder={t("form.email_placeholder")}
+                    value={formState.email}
+                    onChange={(e) => handleChange("email", e.target.value)}
+                    error={formState.errors.email}
+                    required
+                    classes={{ root: "mb-4 md:mb-0", input: "bg-gray-100" }}
+                  />
+                  <Input
+                    IconComponent={
+                      <UserIcon
+                        strokeColor={
+                          formState.errors.name
+                            ? "stroke-red-400"
+                            : "stroke-current"
+                        }
+                      />
+                    }
+                    type="text"
+                    label={t("form.name")}
+                    placeholder={t("form.name_placeholder")}
+                    value={formState.fullname}
+                    onChange={(e) => handleChange("fullname", e.target.value)}
+                    error={formState.errors.fullname}
+                    required
+                    classes={{ root: "md:ml-8", input: "bg-gray-100" }}
+                  />
+                  <Button
+                    text={
+                      formState.loading
+                        ? t("buttons.sending")
+                        : t("buttons.join_the_list")
+                    }
+                    type="submit"
+                    disabled={formState.loading || hasErrors()}
+                    classes={`md:ml-8 text-white bg-black hover:bg-orange min-w-fit h-14 mt-auto`}
+                  />
+                </div>
+
+                {formState.successMessage && (
+                  <p className="mt-4 text-green-500">
+                    {formState.successMessage}
+                  </p>
+                )}
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="/phones-gradient-2x.png"
+        alt="phones gradient"
+        className="absolute top-6 sm:max-h-[500px] max-h-[600px] top-[30rem] sm:top-96 lg:top-28 sm:right-28 sm:scale-[1.6] z-10" /* left-1/2 transform -translate-x-1/2 */
+      />
+      <img
+        src="/section-pattern-4x.png"
+        alt="section pattern"
+        className="absolute left-0 bottom-0 object-cover -top-36 max-w-[65%] h-[48rem] md:h-[60rem] h-[90rem]" /* -top-28 md:-top-40 xl:-top-28 w-full h-[78rem] md:h-[80rem] lg:h-[90rem]  */
+      />
+    </div>
+  );
 }
 
 export default OnboardingSection;
