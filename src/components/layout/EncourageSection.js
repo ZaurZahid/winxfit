@@ -8,7 +8,7 @@ function EncourageSection() {
   return (
     <div
       id="about"
-      className="w-full flex justify-center mt-8 relative py-14 lg:py-16 scroll-mt-40 lg:scroll-mt-60 -mt-12 md:-mt-28"
+      className="bg-red-800 w-full flex justify-center mt-8 relative py-14 lg:py-16 scroll-mt-28 lg:scroll-mt-60 -mt-12 md:-mt-28"
     >
       <div className="absolute max-w-[1536px] w-full left-1/2 -translate-x-1/2 top-0 md:-top-[1rem] lg:-top-[5rem] z-0">
         <img

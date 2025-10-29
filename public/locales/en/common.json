@@ -20,32 +20,17 @@
     "accessibility": "Accessibility",
     "community": "Community"
   },
-  "valuesSection": {
-    "title_header": "AllVer",
-    "title_header_span": "makes shopping",
-    "title_footer": "simpler and more accessible.",
-    "valuesTitle": "Our Values:",
-    "values": {
-      "convenience": "Convenience: The ability to preview stores in advance.",
-      "innovation": "Innovation: Interactive maps and other innovative features.",
-      "community": "Community: Supporting local traders and contributing to local shopping."
-    }
+  "competitions": {
+    "title_header": "Competitions",
+    "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards. Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete.",
+    "first_to_know": "Be the First to Know"
   },
-  "howItWorks": {
-    "steps": {
-      "step_1": {
-        "title": "Search for Traders",
-        "description": "Easily find stores by category and popularity."
-      },
-      "step_2": {
-        "title": "Find Stores with the Map",
-        "description": "Locate stores in shopping centers using interactive maps."
-      },
-      "step_3": {
-        "title": "Discover Offers",
-        "description": "Explore exclusive discounts for users."
-      }
-    }
+  "how_it_works": {
+    "title_header": "How it works?"
+  },
+  "work_with": {
+    "title_header": "Works with",
+    "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards."
   },
   "faqSection": {
     "title": "Frequently Asked Questions",
