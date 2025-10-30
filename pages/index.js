@@ -33,6 +33,7 @@ export default function HomePage({ error }) {
       <WorkWith />
       <Membership />
       <Fags />
+      <BlogSection />
       <ContactForm />
     </Layout>
   );

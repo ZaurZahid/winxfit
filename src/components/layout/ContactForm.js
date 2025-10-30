@@ -158,7 +158,7 @@ export default function ContactForm() {
                   <img
                     src="/thinking-face.png"
                     alt="thinking-face"
-                    className="absolute top-1/2 -translate-y-1/2 right-8 lg:right-12 w-20 h-20 md:w-24 md:h-24"
+                    className="absolute top-20 lg:top-1/2 -translate-y-1/2 -right-4 lg:right-12 w-20 h-20 md:w-24 md:h-24"
                   />
                 </div>
               </div>

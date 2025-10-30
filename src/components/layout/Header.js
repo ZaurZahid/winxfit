@@ -72,7 +72,7 @@ const Header = () => {
         isActive: currentPath === "/#membership",
       },
       {
-        href: "/blogs",
+        href: "#blogs",
         label: t("navigation.blog"),
         id: "blogs",
         isActive: currentPath?.includes("blogs"),
