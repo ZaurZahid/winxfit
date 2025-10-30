@@ -115,12 +115,7 @@
     "email_placeholder": "Enter your email",
     "message": "Your Message",
     "message_placeholder": "Enter your message",
-    "trade_center": "Shopping Center",
     "select": "Select",
     "required": "This field is required"
-  },
-  "payment": {
-    "success_message": "The transaction was successfully completed",
-    "failure_message": "The transaction failed"
   }
 }
