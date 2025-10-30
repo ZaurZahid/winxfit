@@ -4,10 +4,12 @@ import Accordion from "./../ui/Accordion";
 import { useTranslation, Trans } from "next-i18next";
 import mockFaq from "./../../../mock/questions";
 import Button from "./../ui/Button";
+import { useJoinModal } from "../../context/JoinModalContext";
 
 export default function Membership() {
   const { t } = useTranslation("common");
   const [selectedPlan, setSelectedPlan] = useState("annual");
+  const { openJoinModal } = useJoinModal();
 
   return (
     <div
@@ -146,7 +148,7 @@ export default function Membership() {
 
             <Button
               text={t("buttons.early_access")}
-              // onClick={onOpen}
+              onClick={openJoinModal}
               classes={
                 "bg-dark hover:bg-orange text-white whitespace-nowrap h-12"
               }

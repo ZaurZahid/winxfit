@@ -24,9 +24,9 @@ const Linkedin = ({ className }) => {
       />
       <path
         d="M3.66667 6.33333C5.13943 6.33333 6.33333 5.13943 6.33333 3.66667C6.33333 2.19391 5.13943 1 3.66667 1C2.19391 1 1 2.19391 1 3.66667C1 5.13943 2.19391 6.33333 3.66667 6.33333Z"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

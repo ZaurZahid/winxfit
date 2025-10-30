@@ -1,9 +1,11 @@
 import React from "react";
 import { useTranslation } from "next-i18next";
 import Button from "./../ui/Button";
+import { useJoinModal } from "../../context/JoinModalContext";
 
 function EncourageSection() {
   const { t } = useTranslation("common");
+  const { openJoinModal } = useJoinModal();
 
   return (
     <div
@@ -78,7 +80,7 @@ function EncourageSection() {
 
               <Button
                 text={t("buttons.join_the_list")}
-                // onClick={onOpen}
+                onClick={openJoinModal}
                 classes={
                   "bg-dark hover:bg-orange text-white whitespace-nowrap h-12"
                 }

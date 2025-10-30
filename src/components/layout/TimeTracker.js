@@ -2,9 +2,11 @@ import React from "react";
 import { useTranslation, Trans } from "next-i18next";
 import Button from "./../ui/Button";
 import featuresMock from "./../../../mock/features";
+import { useJoinModal } from "../../context/JoinModalContext";
 
 function TimeTracker() {
   const { t } = useTranslation("common");
+  const { openJoinModal } = useJoinModal();
 
   return (
     <div
@@ -41,7 +43,7 @@ function TimeTracker() {
 
                 <Button
                   text={t("buttons.join_the_list")}
-                  // onClick={onOpen}
+                  onClick={openJoinModal}
                   classes={
                     "bg-dark hover:bg-orange text-white whitespace-nowrap h-12"
                   }

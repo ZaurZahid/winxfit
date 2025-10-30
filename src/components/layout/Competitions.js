@@ -1,9 +1,11 @@
 import React from "react";
 import { useTranslation, Trans } from "next-i18next";
 import Button from "./../ui/Button";
+import { useJoinModal } from "../../context/JoinModalContext";
 
 function Competitions() {
   const { t } = useTranslation("common");
+  const { openJoinModal } = useJoinModal();
 
   return (
     <div
@@ -39,7 +41,7 @@ function Competitions() {
 
               <Button
                 text={t("buttons.join_the_list")}
-                // onClick={onOpen}
+                onClick={openJoinModal}
                 classes={
                   "bg-dark hover:bg-orange text-white whitespace-nowrap h-12"
                 }

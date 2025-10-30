@@ -82,7 +82,7 @@
   },
   "joinListModal": {
     "header": {
-      "title": "Do you have questions?",
+      "title": "Sign Up for Early Access",
       "subtitle": "Don’t hesitate to ask now.",
       "follow-us": "Follow us on social media:"
     },
@@ -94,7 +94,7 @@
   },
   "cookieConsentModal": {
     "message": "We use cookies to provide you with the best experience on our system.",
-    "disclaimer": "By continuing, you agree to accept all cookies on the allver.az website."
+    "disclaimer": "By continuing, you agree to accept all cookies on the winxfit.az website."
   },
   "buttons": {
     "join_the_list": "Join to waitlist",
