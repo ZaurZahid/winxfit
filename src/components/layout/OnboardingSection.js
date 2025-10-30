@@ -92,7 +92,7 @@ function OnboardingSection() {
     <div className="relative w-full flex justify-center mt-8 relative lg:py-16 scroll-mt-24 lg:scroll-mt-28 min-h-[950px] lg:min-h-[750px]">
       <div className="max-w-[1440px] w-full px-6 sm:px-8 md:px-16 lg:px-20">
         <div className="h-full flex flex-col lg:flex-row">
-          <div className="h-full flex flex-col lg:max-w-3xl min-w-[60%] relative z-20 border border-red-900">
+          <div className="h-full flex flex-col lg:max-w-3xl min-w-[60%] relative z-20">
             <div className="flex flex-col sm:flex-row sm:items-center">
               <img
                 src="/run-box.png"

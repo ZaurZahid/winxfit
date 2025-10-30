@@ -12,9 +12,9 @@ const Facebook = ({ className }) => {
     >
       <path
         d="M15.6667 1H11.6667C9.89856 1 8.20286 1.70238 6.95262 2.95262C5.70238 4.20286 5 5.89856 5 7.66667V11.6667H1V17H5V27.6667H10.3333V17H14.3333L15.6667 11.6667H10.3333V7.66667C10.3333 7.31304 10.4738 6.97391 10.7239 6.72386C10.9739 6.47381 11.313 6.33333 11.6667 6.33333H15.6667V1Z"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

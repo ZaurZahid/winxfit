@@ -8,7 +8,7 @@ function HowItWorks() {
   return (
     <div
       id="how-it-works"
-      className="bg-red-100 w-full flex justify-center relative py-14 lg:py-16 lg:pt-8 scroll-mt-28 lg:scroll-mt-52 mt-12 lg:mt-36"
+      className="w-full flex justify-center relative py-14 lg:py-16 lg:pt-8 scroll-mt-28 lg:scroll-mt-52 mt-12 lg:mt-36"
     >
       <div className="absolute max-w-[1536px] w-full left-1/2 -translate-x-1/2 top-0 md:-top-[1rem] lg:-top-[5rem] z-0">
         <img
@@ -18,8 +18,8 @@ function HowItWorks() {
         />
       </div>
       <div className="max-w-[1440px] w-full px-6 sm:px-8 md:px-16 lg:px-20 relative z-10">
-        <div className="flex flex-col items-center w-full border border-red-900">
-          <div className="flex flex-col w-full border border-red-900">
+        <div className="flex flex-col items-center w-full">
+          <div className="flex flex-col w-full">
             <div className="mb-4md:mb-10">
               <h2 className="text-5xl lg:text-6xl font-bold mb-8 leading-tight">
                 {t("how_it_works.title_header")}
@@ -48,7 +48,7 @@ function HowItWorks() {
                         <div
                           className={`bg-red-100 rounded-2xl w-16 h-16 md:w-20 md:h-20 flex items-center justify-center transition-all duration-300 hover:scale-110`}
                         >
-                          <span className="text-2xl md:text-5xl font-black text-orange border border-black">
+                          <span className="text-2xl md:text-5xl font-black text-orange">
                             <img
                               src={`/step${step.number}.gif`}
                               alt="step number"

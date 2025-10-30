@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "next-i18next";
+import { useTranslation, Trans } from "next-i18next";
 import Button from "./../ui/Button";
 
 function Competitions() {
@@ -8,7 +8,7 @@ function Competitions() {
   return (
     <div
       id="competitions"
-      className="bg-white w-full flex justify-center relative py-14 lg:py-16 scroll-mt-28 lg:scroll-mt-52 mt-12 lg:mt-36"
+      className="w-full flex justify-center relative py-14 lg:py-16 scroll-mt-28 lg:scroll-mt-52 mt-12 lg:mt-36"
     >
       <div className="absolute max-w-[1536px] w-full left-1/2 -translate-x-1/2 top-0 md:-top-[1rem] lg:-top-[5rem] z-0">
         <img
@@ -19,7 +19,7 @@ function Competitions() {
       </div>
       <div className="max-w-[1440px] w-full px-6 sm:px-8 md:px-16 lg:px-20 relative z-10">
         <div className="flex flex-col lg:flex-row items-center">
-          <div className="flex flex-col lg:max-w-xl min-w-[50%] border border-red-900 pr-8">
+          <div className="flex flex-col lg:max-w-xl min-w-[50%] pr-8">
             <div className="space-y-8">
               <h2 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 {t("competitions.title_header")}
@@ -28,8 +28,13 @@ function Competitions() {
                 {t("competitions.title_desc")}
               </p>
 
-              <h3 className="text-3xl md:text-4xl font-bold mb-6">
-                {t("competitions.first_to_know")}
+              <h3 className="text-3xl md:text-4xl mb-6">
+                <Trans
+                  i18nKey={t("competitions.first_to_know")}
+                  components={{
+                    bold: <strong className="font-bold" />,
+                  }}
+                />
               </h3>
 
               <Button
@@ -41,8 +46,8 @@ function Competitions() {
               />
             </div>
           </div>
-          <div className="grow border border-red-900">
-            <div className="relative border border-red-900 mt-10 lg:mt-0">
+          <div className="grow border">
+            <div className="relative mt-10 lg:mt-0">
               <img
                 src="/competitions-group.png"
                 alt="competitions-group"

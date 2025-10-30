@@ -22,7 +22,7 @@ const Footer = () => {
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="max-w-[1440px] w-full px-6 sm:px-8 md:px-16 lg:px-20">
+        <div className="relative z-20 max-w-[1440px] w-full px-6 sm:px-8 md:px-16 lg:px-20">
           <Link href="/" passHref>
             <img
               src={`${"/logo-white.png"}`}

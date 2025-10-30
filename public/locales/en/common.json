@@ -23,7 +23,7 @@
   "competitions": {
     "title_header": "Competitions",
     "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards. Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete.",
-    "first_to_know": "Be the First to Know"
+    "first_to_know": "<bold>Be the First</bold> to Know"
   },
   "how_it_works": {
     "title_header": "How it works?"
@@ -33,38 +33,24 @@
     "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards."
   },
   "faqSection": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to common questions about AllVer.",
-    "questions": [
-      {
-        "question": "What is AllVer?",
-        "answer": "AllVer is a platform that simplifies shopping by helping you find stores and exclusive offers in local shopping centers."
-      },
-      {
-        "question": "How can I search for a store?",
-        "answer": "You can use our interactive map or search by category and popularity to easily locate the store you're looking for."
-      },
-      {
-        "question": "Is AllVer free to use?",
-        "answer": "Yes, AllVer is completely free for buyers. Sellers may have additional options for premium listings."
-      },
-      {
-        "question": "Can I earn money through AllVer?",
-        "answer": "Yes, you can earn money through the AllVer platform by inviting your friends and traders. The more people you bring, the more you earn."
-      },
-      {
-        "question": "How do I support local traders through AllVer?",
-        "answer": "By shopping with local stores listed on AllVer, you directly support the local economy and community."
-      },
-      {
-        "question": "How can I add the AllVer app?",
-        "answer": "You can download the app from the Apple App Store and Google Play Store."
-      },
-      {
-        "question": "Are there any exclusive proposals?",
-        "answer": "Yes, there are many exclusive offers on the app, such as opportunities to promote yourself as a trader, earn rewards, and discover more unique features designed to help you grow."
-      }
-    ]
+    "title": "Frequently Asked Questions"
+  },
+  "key_features": {
+    "title_header": "Key features"
+  },
+  "timetracker": {
+    "title_header": "Real time tracker",
+    "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards. Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete.",
+    "reserve_your_spot": "<bold>Reserve Your Spot</bold> on the Leaderboard "
+  },
+  "membership": {
+    "title_header": "<bold>Unlock advanced features</bold> with Premium, including custom challenges and higher rewards.",
+    "annually": "ANNUAL",
+    "monthly": "MONTHLY",
+    "save_percent": "(Save -17%)",
+    "billed_yearly": "Billed yearly",
+    "billed_monthly": "Billed monthly",
+    "join_offer": "Join the Waiting List now to get an <bold>exclusive 90-day free</bold> trial at launch."
   },
   "blogSection": {
     "title": "Interesting Information for You",
@@ -110,31 +96,9 @@
     "message": "We use cookies to provide you with the best experience on our system.",
     "disclaimer": "By continuing, you agree to accept all cookies on the allver.az website."
   },
-  "mapSection": {
-    "location": "Address",
-    "inner_map_title": "Internal map of the shopping center"
-  },
-  "shoppingCenters": {
-    "title": "Shopping Centers",
-    "subtitle": "Easily browse trader categories.",
-    "centers": {
-      "center_1": {
-        "name": "Sederek Shopping Center",
-        "description": "Easily browse trader categories."
-      },
-      "center_2": {
-        "name": "Bina Shopping Center",
-        "description": "Easily browse trader categories."
-      },
-      "center_3": {
-        "name": "Absheron Shopping Center",
-        "description": "Easily browse trader categories."
-      }
-    }
-  },
   "buttons": {
     "join_the_list": "Join to waitlist",
-
+    "early_access": "Sign Up for Early Access",
     "register_now": "Register Now",
     "about_us": "About Us",
     "contact_us": "Contact Us",

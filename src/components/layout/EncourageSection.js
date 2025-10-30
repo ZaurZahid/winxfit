@@ -8,7 +8,7 @@ function EncourageSection() {
   return (
     <div
       id="about"
-      className="bg-red-800 w-full flex justify-center mt-8 relative py-14 lg:py-16 scroll-mt-28 lg:scroll-mt-60 -mt-12 md:-mt-28"
+      className="w-full flex justify-center mt-8 relative py-14 lg:py-16 scroll-mt-28 lg:scroll-mt-60 -mt-12 md:-mt-28"
     >
       <div className="absolute max-w-[1536px] w-full left-1/2 -translate-x-1/2 top-0 md:-top-[1rem] lg:-top-[5rem] z-0">
         <img
@@ -19,7 +19,7 @@ function EncourageSection() {
       </div>
       <div className="max-w-[1440px] w-full px-6 sm:px-8 md:px-16 lg:px-20 relative z-10">
         <div className="flex flex-col lg:flex-row items-center lg:items-end">
-          <div className="flex flex-col lg:max-w-2xl min-w-[55%] border border-red-900">
+          <div className="flex flex-col lg:max-w-2xl min-w-[55%]">
             <div className="space-y-8">
               <div>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
@@ -85,8 +85,8 @@ function EncourageSection() {
               />
             </div>
           </div>
-          <div className="grow border border-red-900">
-            <div className="relative border border-red-900 mt-10 lg:mt-0 lg:ml-20">
+          <div className="grow">
+            <div className="relative mt-10 lg:mt-0 lg:ml-20">
               <img
                 src="/encourage1.png"
                 alt="encourage1"
