@@ -1,54 +1,29 @@
-import Head from "next/head";
-import BlogsPage from "../../src/components/blogs/BlogsPage";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Layout from "../../src/components/layout/Layout";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
-import { fetchFromAPI } from "../../src/hooks/apiFetcher";
+import BlogsPage from "../../src/components/blogs/BlogsPage";
+import ContactForm from "../../src/components/layout/ContactForm";
+import { useTranslation } from "next-i18next";
+import { fetchFromAPI } from "./../../src/hooks/apiFetcher";
 
-export default function Blogs({ siteData, blogsData, error }) {
-    const { t } = useTranslation('common')
+export default function Blogs({ error }) {
+  const { t } = useTranslation("common");
 
-    if (error) {
-        return <h1>{error}</h1>;
-    }
+  if (error) {
+    return <h1>{error}</h1>;
+  }
 
-    return (
-        <Layout siteData={siteData}>
-            <Head>
-                <title>AllVer | {t('navigation.blog')}</title>
-                <meta name="description" content="This is a description of blog page." />
-            </Head>
-
-            <BlogsPage blogsData={blogsData} />
-
-            <img src="/group-ellipses.svg" alt="group ellipses" className='absolute right-0 bottom-0' />
-        </Layout>
-    );
+  return (
+    <Layout>
+      <BlogsPage />
+      <ContactForm />
+    </Layout>
+  );
 }
 
-export async function getServerSideProps({ locale }) {
-    try {
-        const [siteData, blogsData] = await Promise.all([
-            fetchFromAPI('/api/v1/support/site/', locale),
-            fetchFromAPI('/api/v1/support/blog/?page=1&per_page=10', locale),
-        ]);
-        return {
-            props: {
-                ...(await serverSideTranslations(locale, ['common'])),
-                siteData,
-                blogsData,
-            },
-        };
-    } catch (error) {
-        console.error('Error in getServerSideProps:', error);
-
-        return {
-            props: {
-                ...(await serverSideTranslations(locale, ['common'])),
-                siteData: null,
-                blogsData: null,
-                error: 'Failed to load data.',
-            },
-        };
-    }
+export async function getServerSideProps({ locale, req }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
 }

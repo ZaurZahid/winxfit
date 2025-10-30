@@ -1,58 +1,81 @@
-import React, { useCallback } from 'react';
+import React, { useCallback } from "react";
 
-const Pagination = ({ itemsPerPage, setItemsPerPage, totalItems, paginate, currentPage, className }) => {
-    const lastPage = Math.ceil(totalItems / itemsPerPage);
+const Pagination = ({
+  itemsPerPage,
+  setItemsPerPage,
+  totalItems,
+  paginate,
+  currentPage,
+  className,
+}) => {
+  const lastPage = Math.ceil(totalItems / itemsPerPage);
 
-    const getPageNumbers = () => {
-        const pages = [];
-        if (lastPage <= 5) {
-            // If there are 5 or fewer pages, display all page numbers
-            for (let i = 1; i <= lastPage; i++) {
-                pages.push(i);
-            }
-        } else {
-            // For more than 5 pages
-            if (currentPage > 3) pages.push(1, '...');
-            for (let i = Math.max(1, currentPage - 1); i <= Math.min(currentPage + 1, lastPage); i++) {
-                pages.push(i);
-            }
-            if (currentPage < lastPage - 2) pages.push('...', lastPage);
-        }
-        return pages;
-    };
+  const getPageNumbers = () => {
+    const pages = [];
+    if (lastPage <= 5) {
+      // If there are 5 or fewer pages, display all page numbers
+      for (let i = 1; i <= lastPage; i++) {
+        pages.push(i);
+      }
+    } else {
+      // For more than 5 pages
+      if (currentPage > 3) pages.push(1, "...");
+      for (
+        let i = Math.max(1, currentPage - 1);
+        i <= Math.min(currentPage + 1, lastPage);
+        i++
+      ) {
+        pages.push(i);
+      }
+      if (currentPage < lastPage - 2) pages.push("...", lastPage);
+    }
+    return pages;
+  };
 
-    const handlePageChange = useCallback(
-        (page) => {
-            if (page !== '...') {
-                paginate(page);
-            }
-        },
-        [paginate]
-    );
+  const handlePageChange = useCallback(
+    (page) => {
+      if (page !== "...") {
+        paginate(page);
+      }
+    },
+    [paginate]
+  );
 
-    const pageNumbers = getPageNumbers();
+  const pageNumbers = getPageNumbers();
 
-    return (
-        <div className={`flex items-center justify-center md:justify-between flex-wrap px-6 py-3 bg-gray-200 rounded-3xl ${className}`}>
-            <nav>
-                <ul className="flex flex-wrap justify-center -m-2">
-                    {pageNumbers.map((number, index) => (
-                        <React.Fragment key={index}>
-                            {number === '...' ? (
-                                <li className="m-2 px-3 py-1 rounded-md text-gray-500 bg-white">{number}</li>
-                            ) : (
-                                <li
-                                    className={`m-2 rounded-md ${number === currentPage ? 'font-bold bg-blue-600 text-white pointer-events-none' : 'font-bold bg-white text-gray-500'
-                                        }`}
-                                >
-                                    <button className='px-3 py-1' onClick={() => handlePageChange(number)}>{number}</button>
-                                </li>
-                            )}
-                        </React.Fragment>
-                    ))}
-                </ul>
-            </nav>
-            <div className="ml-2 mt-4 md:mt-0 flex items-center space-x-2">
+  return (
+    <div
+      className={`flex items-center justify-center md:justify-between flex-wrap pt-8 rounded-3xl ${className}`}
+    >
+      <nav>
+        <ul className="flex flex-wrap justify-center -m-2">
+          {pageNumbers.map((number, index) => (
+            <React.Fragment key={index}>
+              {number === "..." ? (
+                <li className="m-2 px-3 py-1 rounded-md text-gray-600 bg-white">
+                  {number}
+                </li>
+              ) : (
+                <li
+                  className={`m-2 rounded-md ${
+                    number === currentPage
+                      ? "font-bold bg-blue-600 text-white pointer-events-none"
+                      : "font-bold bg-white text-gray-600"
+                  }`}
+                >
+                  <button
+                    className="px-3 py-1"
+                    onClick={() => handlePageChange(number)}
+                  >
+                    {number}
+                  </button>
+                </li>
+              )}
+            </React.Fragment>
+          ))}
+        </ul>
+      </nav>
+      {/* <div className="ml-2 mt-4 md:mt-0 flex items-center space-x-2">
                 <label htmlFor="pageSize">Visible row count:</label>
                 <div className="relative inline-block">
                     <select
@@ -71,9 +94,9 @@ const Pagination = ({ itemsPerPage, setItemsPerPage, totalItems, paginate, curre
                         </svg>
                     </div>
                 </div>
-            </div>
-        </div>
-    );
+            </div> */}
+    </div>
+  );
 };
 
 export default Pagination;
