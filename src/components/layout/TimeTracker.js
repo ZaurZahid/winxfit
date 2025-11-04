@@ -14,16 +14,16 @@ function TimeTracker() {
       className="relative bg-white overflow-hidden w-full flex justify-center relative py-14 lg:py-16 scroll-mt-28 lg:scroll-mt-32"
     >
       <div className="max-w-[1440px] w-full px-6 sm:px-8 md:px-16 lg:px-20 relative z-20">
-        <div className="flex flex-col lg:flex-row lg:items-center">
-          <div className="flex flex-col lg:max-w-xl min-w-[50%] lg:pr-8">
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center">
+          <div className="flex flex-col lg:max-w-xl min-w-[50%] lg:pr-8 mt-10 lg:mt-0">
             <img
               src="/timetracker.png"
               alt="timetracker"
-              className="h-[380px] sm:h-[700px] lg:h-[600px] animate-float-right"
+              className="h-auto sm:h-[700px] lg:h-[600px] animate-float-right"
             />
           </div>
           <div className="grow">
-            <div className="relative lg:max-w-[95%] flex lg:ml-auto mt-10 lg:mt-0">
+            <div className="relative lg:max-w-[95%] flex lg:ml-auto">
               <div className="space-y-8">
                 <h2 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                   {t("timetracker.title_header")}

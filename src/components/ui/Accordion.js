@@ -16,7 +16,7 @@ const Accordion = ({ data: mockFaq }) => {
 
   return (
     <div className="w-full">
-      <div className="flex flex-wrap gap-3 mb-12">
+      <div className="flex overflow-x-auto gap-3 mb-12">
         {categories.map((category) => (
           <button
             key={category}
@@ -26,7 +26,7 @@ const Accordion = ({ data: mockFaq }) => {
                 setSelectedCategory(category);
               }, 100);
             }}
-            className={`px-5 py-2.5 rounded-md text-sm font-medium transition-colors ${
+            className={`px-5 py-2.5 min-w-fit rounded-md text-sm font-medium transition-colors ${
               selectedCategory === category
                 ? "bg-orange text-white"
                 : "hover:bg-gray-300"

@@ -46,7 +46,7 @@ function Features() {
               <img
                 src="/key-features-apps.png"
                 alt="key-features-apps"
-                className="h-[450px] sm:h-[700px] lg:-mr-20 animate-float-left"
+                className="h-auto sm:h-[700px] lg:-mr-20 animate-float-left"
               />
             </div>
           </div>

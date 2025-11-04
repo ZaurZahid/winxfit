@@ -53,7 +53,7 @@ function Competitions() {
               <img
                 src="/competitions-group.png"
                 alt="competitions-group"
-                className="h-[350px] sm:h-[500px] animate-float-left" /* animate-float-left */
+                className="h-auto sm:h-[500px] animate-float-left" /* animate-float-left */
               />
             </div>
           </div>
