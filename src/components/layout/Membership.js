@@ -30,12 +30,12 @@ export default function Membership() {
               <img
                 src="/membership-top-left.png"
                 alt="membership-top-left"
-                className="absolute -top-16 sm:-top-10 -left-6 sm:-left-8 lg:-left-2 z-10 h-16 lg:h-20 2xl:h-16 animate-float-left"
+                className="absolute -top-16 sm:-top-10 -left-6 sm:-left-8 lg:-left-2 2xl:-left-24 z-10 h-16 lg:h-20 2xl:h-16 animate-float-left"
               />
               <img
                 src="/membership-top-right.png"
                 alt="membership-top-right"
-                className="absolute -top-10 sm:-top-5 -right-10 sm:-right-12 lg:-right-8 z-10 h-12 lg:h-16 2xl:h-12 animate-float-right"
+                className="absolute -top-10 sm:-top-5 -right-10 sm:-right-12 lg:-right-8 2xl:-right-28 z-10 h-12 lg:h-16 2xl:h-12 animate-float-right"
               />
             </h1>
 
