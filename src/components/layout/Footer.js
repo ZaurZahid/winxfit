@@ -54,7 +54,15 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {t("footer.links.termsPrivacy")}
+                {t("footer.links.terms")}
+              </a>
+              <a
+                href={`/privacy/${locale}`}
+                className="underline hover:text-gray"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t("footer.links.privacy")}
               </a>
             </div>
           </div>

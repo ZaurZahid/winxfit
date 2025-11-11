@@ -74,7 +74,8 @@
     "copyright": "© 2025 Xprime Solutions Limited. All rights reserved.",
     "description": "Join a global community that turns motivation into results. Stay active. Stay accountable. Stay rewarded.",
     "links": {
-      "termsPrivacy": "Terms & Privacy Policy",
+      "terms": "Terms",
+      "privacy": "Privacy Policy",
       "faq": "FAQ",
       "about": "About Us"
     }
