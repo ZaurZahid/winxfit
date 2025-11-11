@@ -1,37 +1,37 @@
 const howItWorksMock = [
   {
     number: "1",
-    title: "Sign Up for Free",
+    title: "Sign Up (Free)",
     description:
-      "Download the WinxFit app from the App Store or Google Play. Create an account with your email or social login. Start participating in competitions right away – no subscription is needed to get started!",
+      "Create your free WinxFit account in seconds using your email or social login. Get started right away — no subscription required.",
     align: "left",
   },
   {
     number: "2",
-    title: "Choose Your Competition",
+    title: "Choose a Challenge",
     description:
-      "Browse through a variety of competitions tailored to different fitness levels: Daily Challenges, Weekly Challenges, Monthly Competitions, Custom Competitions.",
+      "Pick from public, themed, or invite-only challenges. Compete in running, walking, cycling, or other fitness activities that match your goals.",
     align: "right",
   },
   {
     number: "3",
-    title: "Track Your Activity",
+    title: "Connect Your Device",
     description:
-      "Connect your fitness tracker or wearable device (Apple Watch, Fitbit, Google Fit, etc.) to the app. Your progress is automatically updated in real-time to ensure accuracy and fairness.",
+      "Sync your favorite tracker — Apple Health, Google Fit, Fitbit, Strava, or Garmin. WinxFit automatically verifies your activity data for fair results.",
     align: "left",
   },
   {
     number: "4",
-    title: "Compete and Stay Motivated",
+    title: "Compete Consistently",
     description:
-      "Follow your progress on the real-time leaderboard. Compare your performance with others in the competition to stay motivated. Engage with other participants by sharing updates and achievements.",
+      "Open the app daily to sync progress, stay active in challenges, and maintain your streaks. Consistency keeps you on the leaderboard.",
     align: "right",
   },
   {
     number: "5",
-    title: "Earn Rewards",
+    title: "Earn & Redeem Rewards",
     description:
-      "Win competitions or hit milestones to earn cash prizes, points, and achievement badges. Redeem points for discounts, loyalty programs, or donations to charities.",
+      "Complete challenges to earn points and cash. Redeem your rewards for perks, discounts, and real-world prizes — the more you move, the more you win.",
     align: "left",
   },
 ];

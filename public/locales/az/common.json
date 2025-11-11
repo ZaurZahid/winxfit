@@ -1,98 +1,69 @@
 {
   "navigation": {
-    "home": "Ana səhifə",
-    "about": "Haqqımızda",
-    "features": "Əsas xüsusiyyətlər",
-    "shopping_centers": "Ticarət Mərkəzləri",
+    "about": "About Us",
+    "features": "Key Features",
+    "competitions": "Competitions",
+    "how_it_works": "How It Works",
+    "membership": "Membership",
     "faq": "FAQ",
-    "blog": "Bloq",
-    "contact": "Əlaqə",
-    "join": "Qoşulun"
+    "blog": "Blog / News",
+    "contact": "Contact Us"
   },
   "onboarding": {
-    "title_header": "Yerli",
-    "title_header_span": "alış verişə",
-    "title_footer": "rəqəmsal imkanlar gətirir.",
-    "subtitle": "Bina, Sədərək və Abşeron ticarət mərkəzlərindəki mağazaları asanlıqla tapın. AllVer xəritəsi ilə vaxtınıza qənaət edin və ən yaxın mağazaları tez bir zamanda kəşf edin.",
-    "options": {
-      "seller": "Mən satıcıyam",
-      "buyer": "Mən alıcıyam"
-    }
+    "title_header": "🏋️‍♂️ WinxFit — Compete. Win. Stay Fit. Transform Your Fitness Journey!"
   },
-  "valuesSection": {
-    "title_header": "AllVer",
-    "title_header_span": "alış-verişi",
-    "title_footer": "daha asan və əlçatan edir.",
-    "valuesTitle": "Dəyərlərimiz:",
-    "values": {
-      "convenience": "Rahatlıq: Mağazaları əvvəlcədən nəzərdən keçirmək imkanı.",
-      "innovation": "Yenilik: İnteraktiv xəritələr və digər innovativ xüsusiyyətlər.",
-      "community": "Cəmiyyət: Yerli ticarətçilərə dəstək və yerli alış-verişə töhfə."
-    }
+  "aboutus": {
+    "title_header": "We make fitness social, measurable, and rewarding.",
+    "title_desc": "WinxFit is a next-generation fitness app that turns your daily movement into motivation. Join challenges, track progress in real time, and earn meaningful rewards. Whether you walk, run, or cycle, WinxFit makes every step count.",
+    "our_values": "Our Values",
+    "transparancy": "Transparency",
+    "accessibility": "Motivation",
+    "community": "Community"
   },
-  "howItWorks": {
-    "steps": {
-      "step_1": {
-        "title": "Ticarətçiləri Axtarın",
-        "description": "Kateqoriyalara və populyarlığa görə mağazaları asanlıqla tapın."
-      },
-      "step_2": {
-        "title": "Xəritə ilə Mağazaları Tapın",
-        "description": "İnteraktiv xəritələrlə ticarət mərkəzlərində mağazaların yerini tapın."
-      },
-      "step_3": {
-        "title": "Təklifləri Kəşf Edin",
-        "description": "İstifadəçilər üçün eksklüziv endirimləri kəşf edin."
-      }
-    }
+  "competitions": {
+    "title_header": "Compete Your Way",
+    "title_desc": "Choose from hundreds of challenge types like steps, distance, or active minutes. Every event uses verified data for fair results and real-time progress tracking.",
+    "first_to_know": "<bold>Be the First</bold> to Know"
+  },
+  "how_it_works": {
+    "title_header": "How It Works"
+  },
+  "work_with": {
+    "title_header": "Works With",
+    "title_desc": "WinxFit connects with your favorite devices — Apple Health, Google Fit, Fitbit, Strava, and Garmin — to keep your progress accurate and automatic."
   },
   "faqSection": {
-    "title": "Tez-tez verilən suallar",
-    "subtitle": "AllVer haqqında ümumi suallara cavab tapın.",
-    "questions": [
-      {
-        "question": "AllVer nədir?",
-        "answer": "AllVer, alış-verişi sadələşdirən və yerli ticarət mərkəzlərində mağazaları və eksklüziv təklifləri tapmağa kömək edən platformadır."
-      },
-      {
-        "question": "Mağazanı necə axtara bilərəm?",
-        "answer": "Mağazanı asanlıqla tapmaq üçün interaktiv xəritəmizdən istifadə edə və ya kateqoriyalar və populyarlığa görə axtarış edə bilərsiniz."
-      },
-      {
-        "question": "AllVer istifadəsi pulsuzdurmu?",
-        "answer": "Bəli, AllVer alıcılar üçün tamamilə pulsuzdur. Satıcılar üçün isə əlavə premium seçimlər mövcuddur."
-      },
-      {
-        "question": "AllVer vasitəsilə pul qazana bilərəmmi?",
-        "answer": "Bəli, AllVer platforması vasitəsilə dostlarınızı və ticarətçiləri dəvət edərək pul qazana bilərsiniz. Daha çox insan dəvət etdikcə, daha çox qazanacaqsınız."
-      },
-      {
-        "question": "Yerli ticarətçiləri AllVer vasitəsilə necə dəstəkləyə bilərəm?",
-        "answer": "AllVer-də sadalanan yerli mağazalardan alış-veriş edərək, birbaşa yerli iqtisadiyyatı və cəmiyyəti dəstəkləyirsiniz."
-      },
-      {
-        "question": "AllVer tətbiqini necə əlavə edə bilərəm?",
-        "answer": "Tətbiqi Apple App Store və Google Play Store-dan yükləyə bilərsiniz."
-      },
-      {
-        "question": "Eksklüziv təkliflər varmı?",
-        "answer": "Bəli, tətbiqdə ticarətçi kimi özünüzü tanıtmaq, mükafatlar qazanmaq və daha çox unikal xüsusiyyətlərdən istifadə etmək üçün bir çox eksklüziv təkliflər mövcuddur."
-      }
-    ]
+    "title": "Frequently Asked Questions"
+  },
+  "key_features": {
+    "title_header": "Key Features"
+  },
+  "timetracker": {
+    "title_header": "Real-Time Progress Tracker",
+    "title_desc": "Watch your stats update live as you move. WinxFit connects directly with your device to show real-time ranks, streaks, and challenge progress while maintaining fair play.",
+    "reserve_your_spot": "<bold>Reserve Your Spot</bold> on the Leaderboard"
+  },
+  "membership": {
+    "title_header": "<bold>Unlock advanced features</bold> with Premium — create custom challenges, access analytics, and earn higher rewards.",
+    "annually": "ANNUAL",
+    "monthly": "MONTHLY",
+    "save_percent": "(Save up to 20%)",
+    "billed_yearly": "Billed yearly",
+    "billed_monthly": "Billed monthly",
+    "join_offer": "Join the waiting list now and get an <bold>exclusive 90-day free</bold> Premium trial at launch."
   },
   "blogSection": {
-    "title": "Sizin üçün maraqlı məlumatlar",
-    "subtitle": "Ticarətçi kateqoriyalarını asanlıqla gözdən keçirin."
+    "title": "We Also Write About Healthy Living"
   },
   "contactUsSection": {
-    "title": "Sualınız var? Bizdən soruşa bilərsiniz.",
-    "subtitle": "Hər hansı bir sualınız varsa, bizimlə əlaqə saxlayın.",
+    "title": "Have a Question?",
+    "subtitle": "We’d love to hear from you. Fill out the form and our team will respond soon.",
     "contactMethods": {
       "phone": {
-        "label": "Telefon:"
+        "label": "Phone:"
       },
       "phoneNumber": {
-        "label": "Telefon nömrəsi"
+        "label": "Phone Number"
       },
       "email": {
         "label": "Email:"
@@ -100,74 +71,51 @@
     }
   },
   "footer": {
-    "copyright": "Bütün hüquqlar qorunur",
+    "copyright": "© 2025 Xprime Solutions Limited. All rights reserved.",
+    "description": "Join a global community that turns motivation into results. Stay active. Stay accountable. Stay rewarded.",
     "links": {
-      "privacyPolicy": "Məxfilik Siyasəti",
-      "termsOfUse": "İstifadə Şərtləri"
+      "termsPrivacy": "Terms & Privacy Policy",
+      "faq": "FAQ",
+      "about": "About Us"
     }
   },
   "joinListModal": {
     "header": {
-      "title": "Siz də listə qoşulun",
-      "subtitle": "Bunu yazmaq lazimdir.... Mauris vestibulum viverra fames blandit suspendisse elementum diam. Purus nisi vestibulum amet nibh. Auctor sed donec at in praesent turpis."
+      "title": "Sign Up for Early Access",
+      "subtitle": "Get exclusive access before launch and enjoy your 90-day Premium trial.",
+      "follow-us": "Follow us on social media:"
     },
     "success_message": {
-      "title": "Təbriklər siz artıq gözləyənlər listinə qoşuldunuz!",
-      "subtitle": "Bunu yazmaq lazimdir.... success Mauris vestibulum viverra fames blandit suspendisse elementum diam. Purus nisi vestibulum amet nibh. Auctor sed donec at in praesent turpis."
+      "title": "You’re In! 🎉",
+      "subtitle": "Congratulations! You’ve successfully joined the WinxFit waiting list. We’ll notify you as soon as early access opens. Stay tuned for updates and launch rewards!"
     },
-    "waitingMessage": "1.5k+ nəfər gözləmədədir"
+    "waitingMessage": "1.5k+ people are already waiting"
   },
   "cookieConsentModal": {
-    "message": "Sistemdə sizə ən yaxşı təcrübə təqdim etmək üçün çərəzlərdən istifadə edirik.",
-    "disclaimer": "Davam edərək, allver.az saytında bütün çərəzləri qəbul etməyə razısınız."
-  },
-  "mapSection": {
-    "location": "Ünvan",
-    "inner_map_title": "Ticarət mərkəzinin daxili xəritəsi"
-  },
-  "shoppingCenters": {
-    "title": "Ticarət mərkəzləri",
-    "subtitle": "Ticarətçi kateqoriyalarını asanlıqla gözdən keçirin.",
-    "centers": {
-      "center_1": {
-        "name": "Sədərək Ticarət Mərkəzi",
-        "description": "Ticarətçi kateqoriyalarını asanlıqla gözdən keçirin."
-      },
-      "center_2": {
-        "name": "Binə Ticarət Mərkəzi",
-        "description": "Ticarətçi kateqoriyalarını asanlıqla gözdən keçirin."
-      },
-      "center_3": {
-        "name": "Abşeron Ticarət Mərkəzi",
-        "description": "Ticarətçi kateqoriyalarını asanlıqla gözdən keçirin."
-      }
-    }
+    "message": "We use cookies to ensure you get the best experience on WinxFit.",
+    "disclaimer": "By continuing, you agree to our cookie policy on winxfit.az."
   },
   "buttons": {
-    "register_now": "İndi qeydiyyatdan keç",
-    "about_us": "Haqqımızda",
-    "contact_us": "Bizimlə əlaqə",
-    "read_more": "Hamısına bax",
-    "send_now": "Göndər",
-    "join_the_list": "Listə qoşulun",
-    "sending": "Göndərilir",
-    "decline": "İmtina et",
-    "accept": "Qəbul et",
-    "share": "Paylaş"
+    "join_the_list": "Join the Waitlist",
+    "early_access": "Sign Up for Early Access",
+    "register_now": "Register Now",
+    "about_us": "About Us",
+    "contact_us": "Contact Us",
+    "read_more": "Read More",
+    "send_now": "Send Message",
+    "sending": "Sending...",
+    "decline": "Decline",
+    "accept": "Accept",
+    "share": "Share"
   },
   "form": {
-    "name": "Ad və soyadınız",
-    "name_placeholder": "Adınızı daxil edin",
-    "email": "E-poçt",
-    "email_placeholder": "E-poçt daxil edin",
-    "message": "Mesajınız",
-    "message_placeholder": "Mesajınızı daxil edin",
-    "trade_center": "Ticarət mərkəzi",
-    "select": "Seçin",
-    "required": "Bu xananı doldurmaq vacibdir"
-  },
-  "payment":{
-    "success_message": "Əməliyyat uğurla tamamlandı",
-    "failure_message": "Əməliyyat uğursuz oldu"
+    "name": "Name and Surname",
+    "name_placeholder": "Enter your full name",
+    "email": "Email",
+    "email_placeholder": "Enter your email address",
+    "message": "Your Message",
+    "message_placeholder": "Type your message here",
+    "select": "Select",
+    "required": "This field is required"
   }
 }

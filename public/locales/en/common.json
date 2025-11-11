@@ -1,63 +1,63 @@
 {
   "navigation": {
     "about": "About Us",
-    "features": "Features",
+    "features": "Key Features",
     "competitions": "Competitions",
     "how_it_works": "How It Works",
     "membership": "Membership",
     "faq": "FAQ",
-    "blog": "Blog/News",
+    "blog": "Blog / News",
     "contact": "Contact Us"
   },
   "onboarding": {
-    "title_header": "Be Ready to Transform Your Fitness Journey with WinxFit!"
+    "title_header": "🏋️‍♂️ WinxFit — Compete. Win. Stay Fit. Transform Your Fitness Journey!"
   },
   "aboutus": {
-    "title_header": "We encourage healthy lifestyles through engaging fitness challenges",
-    "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards. Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete.",
+    "title_header": "We make fitness social, measurable, and rewarding.",
+    "title_desc": "WinxFit is a next-generation fitness app that turns your daily movement into motivation. Join challenges, track progress in real time, and earn meaningful rewards. Whether you walk, run, or cycle, WinxFit makes every step count.",
     "our_values": "Our Values",
-    "transparancy": "Transparancy",
-    "accessibility": "Accessibility",
+    "transparancy": "Transparency",
+    "accessibility": "Motivation",
     "community": "Community"
   },
   "competitions": {
-    "title_header": "Competitions",
-    "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards. Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete.",
+    "title_header": "Compete Your Way",
+    "title_desc": "Choose from hundreds of challenge types like steps, distance, or active minutes. Every event uses verified data for fair results and real-time progress tracking.",
     "first_to_know": "<bold>Be the First</bold> to Know"
   },
   "how_it_works": {
-    "title_header": "How it works?"
+    "title_header": "How It Works"
   },
   "work_with": {
-    "title_header": "Works with",
-    "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards."
+    "title_header": "Works With",
+    "title_desc": "WinxFit connects with your favorite devices — Apple Health, Google Fit, Fitbit, Strava, and Garmin — to keep your progress accurate and automatic."
   },
   "faqSection": {
     "title": "Frequently Asked Questions"
   },
   "key_features": {
-    "title_header": "Key features"
+    "title_header": "Key Features"
   },
   "timetracker": {
-    "title_header": "Real time tracker",
-    "title_desc": "WinxFit is a revolutionary fitness platform that motivates you to stay active, achieve goals, and earn exciting rewards. Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete.",
-    "reserve_your_spot": "<bold>Reserve Your Spot</bold> on the Leaderboard "
+    "title_header": "Real-Time Progress Tracker",
+    "title_desc": "Watch your stats update live as you move. WinxFit connects directly with your device to show real-time ranks, streaks, and challenge progress while maintaining fair play.",
+    "reserve_your_spot": "<bold>Reserve Your Spot</bold> on the Leaderboard"
   },
   "membership": {
-    "title_header": "<bold>Unlock advanced features</bold> with Premium, including custom challenges and higher rewards.",
+    "title_header": "<bold>Unlock advanced features</bold> with Premium — create custom challenges, access analytics, and earn higher rewards.",
     "annually": "ANNUAL",
     "monthly": "MONTHLY",
-    "save_percent": "(Save -17%)",
+    "save_percent": "(Save up to 20%)",
     "billed_yearly": "Billed yearly",
     "billed_monthly": "Billed monthly",
-    "join_offer": "Join the Waiting List now to get an <bold>exclusive 90-day free</bold> trial at launch."
+    "join_offer": "Join the waiting list now and get an <bold>exclusive 90-day free</bold> Premium trial at launch."
   },
   "blogSection": {
-    "title": "We also write about healthy lifestyle"
+    "title": "We Also Write About Healthy Living"
   },
   "contactUsSection": {
-    "title": "Have a question? You can ask us.",
-    "subtitle": "If you have any questions, get in touch with us.",
+    "title": "Have a Question?",
+    "subtitle": "We’d love to hear from you. Fill out the form and our team will respond soon.",
     "contactMethods": {
       "phone": {
         "label": "Phone:"
@@ -71,10 +71,10 @@
     }
   },
   "footer": {
-    "copyright": "All rights reserved",
-    "description": "Join a community of fitness enthusiasts and start competing in challenges designed for everyone – whether you’re a beginner or an advanced athlete",
+    "copyright": "© 2025 Xprime Solutions Limited. All rights reserved.",
+    "description": "Join a global community that turns motivation into results. Stay active. Stay accountable. Stay rewarded.",
     "links": {
-      "termsPrivacy": "Terms and privacy policy",
+      "termsPrivacy": "Terms & Privacy Policy",
       "faq": "FAQ",
       "about": "About Us"
     }
@@ -82,39 +82,39 @@
   "joinListModal": {
     "header": {
       "title": "Sign Up for Early Access",
-      "subtitle": "Don’t hesitate to ask now.",
+      "subtitle": "Get exclusive access before launch and enjoy your 90-day Premium trial.",
       "follow-us": "Follow us on social media:"
     },
     "success_message": {
-      "title": "Congratulations! You have joined the waiting list!",
-      "subtitle": "Placeholder text... success Mauris vestibulum viverra fames blandit suspendisse elementum diam. Purus nisi vestibulum amet nibh. Auctor sed donec at in praesent turpis."
+      "title": "You’re In! 🎉",
+      "subtitle": "Congratulations! You’ve successfully joined the WinxFit waiting list. We’ll notify you as soon as early access opens. Stay tuned for updates and launch rewards!"
     },
-    "waitingMessage": "1.5k+ people are waiting"
+    "waitingMessage": "1.5k+ people are already waiting"
   },
   "cookieConsentModal": {
-    "message": "We use cookies to provide you with the best experience on our system.",
-    "disclaimer": "By continuing, you agree to accept all cookies on the winxfit.az website."
+    "message": "We use cookies to ensure you get the best experience on WinxFit.",
+    "disclaimer": "By continuing, you agree to our cookie policy on winxfit.az."
   },
   "buttons": {
-    "join_the_list": "Join to waitlist",
+    "join_the_list": "Join the Waitlist",
     "early_access": "Sign Up for Early Access",
     "register_now": "Register Now",
     "about_us": "About Us",
     "contact_us": "Contact Us",
     "read_more": "Read More",
-    "send_now": "Send message",
-    "sending": "Sending",
+    "send_now": "Send Message",
+    "sending": "Sending...",
     "decline": "Decline",
     "accept": "Accept",
     "share": "Share"
   },
   "form": {
-    "name": "Name and surname",
-    "name_placeholder": "Enter your name and surname",
+    "name": "Name and Surname",
+    "name_placeholder": "Enter your full name",
     "email": "Email",
-    "email_placeholder": "Enter your email",
+    "email_placeholder": "Enter your email address",
     "message": "Your Message",
-    "message_placeholder": "Enter your message",
+    "message_placeholder": "Type your message here",
     "select": "Select",
     "required": "This field is required"
   }

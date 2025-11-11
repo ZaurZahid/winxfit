@@ -1,173 +1,121 @@
 {
   "navigation": {
-    "home": "Главная",
-    "about": "О нас",
-    "features": "Основные функции",
-    "shopping_centers": "Торговые центры",
-    "faq": "Часто задаваемые вопросы",
-    "blog": "Блог",
-    "contact": "Контакты",
-    "join": "Присоединиться"
+    "about": "About Us",
+    "features": "Key Features",
+    "competitions": "Competitions",
+    "how_it_works": "How It Works",
+    "membership": "Membership",
+    "faq": "FAQ",
+    "blog": "Blog / News",
+    "contact": "Contact Us"
   },
   "onboarding": {
-    "title_header": "Приносит",
-    "title_header_span": "цифровые возможности",
-    "title_footer": "в местную торговлю.",
-    "subtitle": "Экономьте своё время с картой AllVer и легко находите магазины в торговых центрах Бина, Седерек и Абшерон.",
-    "options": {
-      "seller": "Я продавец",
-      "buyer": "Я покупатель"
-    }
+    "title_header": "🏋️‍♂️ WinxFit — Compete. Win. Stay Fit. Transform Your Fitness Journey!"
   },
-  "valuesSection": {
-    "title_header": "AllVer",
-    "title_header_span": "делает шопинг",
-    "title_footer": "проще и доступнее.",
-    "valuesTitle": "Наши ценности:",
-    "values": {
-      "convenience": "Удобство: Возможность предварительно просматривать магазины.",
-      "innovation": "Инновации: Интерактивные карты и другие современные функции.",
-      "community": "Сообщество: Поддержка местных предпринимателей и вклад в развитие внутренней торговли."
-    }
+  "aboutus": {
+    "title_header": "We make fitness social, measurable, and rewarding.",
+    "title_desc": "WinxFit is a next-generation fitness app that turns your daily movement into motivation. Join challenges, track progress in real time, and earn meaningful rewards. Whether you walk, run, or cycle, WinxFit makes every step count.",
+    "our_values": "Our Values",
+    "transparancy": "Transparency",
+    "accessibility": "Motivation",
+    "community": "Community"
   },
-  "howItWorks": {
-    "steps": {
-      "step_1": {
-        "title": "Поиск торговцев",
-        "description": "Легко находите магазины по категориям и популярности."
-      },
-      "step_2": {
-        "title": "Находите магазины по карте",
-        "description": "Прокладывайте маршрут к нужному магазину с помощью интерактивных карт."
-      },
-      "step_3": {
-        "title": "Открывайте предложения",
-        "description": "Получите доступ к персональным акциям и выгодным предложениям.."
-      }
-    }
+  "competitions": {
+    "title_header": "Compete Your Way",
+    "title_desc": "Choose from hundreds of challenge types like steps, distance, or active minutes. Every event uses verified data for fair results and real-time progress tracking.",
+    "first_to_know": "<bold>Be the First</bold> to Know"
+  },
+  "how_it_works": {
+    "title_header": "How It Works"
+  },
+  "work_with": {
+    "title_header": "Works With",
+    "title_desc": "WinxFit connects with your favorite devices — Apple Health, Google Fit, Fitbit, Strava, and Garmin — to keep your progress accurate and automatic."
   },
   "faqSection": {
-    "title": "Часто задаваемые вопросы",
-    "subtitle": "Все, что нужно знать об AllVer.",
-    "questions": [
-      {
-        "question": "Что такое AllVer?",
-        "answer": "AllVer — это платформа, упрощающая покупки, помогая находить магазины и уникальные предложения в местных торговых центрах."
-      },
-      {
-        "question": "Как я могу найти магазин?",
-        "answer": "Вы можете использовать нашу интерактивную карту или искать по категориям и популярности, чтобы легко найти нужный магазин."
-      },
-      {
-        "question": "Бесплатно ли использовать AllVer?",
-        "answer": "Да, использование AllVer абсолютно бесплатно для покупателей. Продавцам предлагаются расширенные возможности по премиум-подписке."
-      },
-      {
-        "question": "Могу ли я зарабатывать деньги через AllVer?",
-        "answer": "Да, с помощью платформы AllVer вы можете зарабатывать, приглашая друзей и торговцев. Чем больше приглашений — тем больше доход!."
-      },
-      {
-        "question": "Как я могу поддержать местных торговцев через AllVer?",
-        "answer": "Совершая покупки в местных магазинах, указанных на AllVer, вы напрямую поддерживаете местную экономику и сообщество."
-      },
-      {
-        "question": "Как я могу установить приложение AllVer?",
-        "answer": "Вы можете скачать приложение в Apple App Store и Google Play Store."
-      },
-      {
-        "question": "Есть ли эксклюзивные предложения?",
-        "answer": "Есть, в AllVer доступны эксклюзивные предложения для продавцов: вы можете продвигать свои товары и магазин, зарабатывать награды и использовать дополнительные функции для эффективного взаимодействия с покупателями."
-      }
-    ]
+    "title": "Frequently Asked Questions"
+  },
+  "key_features": {
+    "title_header": "Key Features"
+  },
+  "timetracker": {
+    "title_header": "Real-Time Progress Tracker",
+    "title_desc": "Watch your stats update live as you move. WinxFit connects directly with your device to show real-time ranks, streaks, and challenge progress while maintaining fair play.",
+    "reserve_your_spot": "<bold>Reserve Your Spot</bold> on the Leaderboard"
+  },
+  "membership": {
+    "title_header": "<bold>Unlock advanced features</bold> with Premium — create custom challenges, access analytics, and earn higher rewards.",
+    "annually": "ANNUAL",
+    "monthly": "MONTHLY",
+    "save_percent": "(Save up to 20%)",
+    "billed_yearly": "Billed yearly",
+    "billed_monthly": "Billed monthly",
+    "join_offer": "Join the waiting list now and get an <bold>exclusive 90-day free</bold> Premium trial at launch."
   },
   "blogSection": {
-    "title": "Интересная информация для вас",
-    "subtitle": "Легко просматривайте категории торговцев."
+    "title": "We Also Write About Healthy Living"
   },
   "contactUsSection": {
-    "title": "Есть вопрос? Вы можете спросить нас.",
-    "subtitle": "Если у вас есть вопросы, свяжитесь с нами.",
+    "title": "Have a Question?",
+    "subtitle": "We’d love to hear from you. Fill out the form and our team will respond soon.",
     "contactMethods": {
       "phone": {
-        "label": "Телефон:"
+        "label": "Phone:"
       },
       "phoneNumber": {
-        "label": "Номер телефона"
+        "label": "Phone Number"
       },
       "email": {
-        "label": "Электронная почта:"
+        "label": "Email:"
       }
     }
   },
   "footer": {
-    "copyright": "Все права защищены",
+    "copyright": "© 2025 Xprime Solutions Limited. All rights reserved.",
+    "description": "Join a global community that turns motivation into results. Stay active. Stay accountable. Stay rewarded.",
     "links": {
-      "privacyPolicy": "Политика конфиденциальности",
-      "termsOfUse": "Условия использования"
+      "termsPrivacy": "Terms & Privacy Policy",
+      "faq": "FAQ",
+      "about": "About Us"
     }
   },
   "joinListModal": {
     "header": {
-      "title": "Присоединяйтесь к списку",
-      "subtitle": "Текст-заполнитель... Mauris vestibulum viverra fames blandit suspendisse elementum diam. Purus nisi vestibulum amet nibh. Auctor sed donec at in praesent turpis."
+      "title": "Sign Up for Early Access",
+      "subtitle": "Get exclusive access before launch and enjoy your 90-day Premium trial.",
+      "follow-us": "Follow us on social media:"
     },
     "success_message": {
-      "title": "Поздравляем! Вы присоединились к списку ожидания!",
-      "subtitle": "Текст-заполнитель... success Mauris vestibulum viverra fames blandit suspendisse elementum diam. Purus nisi vestibulum amet nibh. Auctor sed donec at in praesent turpis."
+      "title": "You’re In! 🎉",
+      "subtitle": "Congratulations! You’ve successfully joined the WinxFit waiting list. We’ll notify you as soon as early access opens. Stay tuned for updates and launch rewards!"
     },
-    "waitingMessage": "Более 1,5 тыс. человек в ожидании"
+    "waitingMessage": "1.5k+ people are already waiting"
   },
   "cookieConsentModal": {
-    "message": "Мы используем cookies, чтобы предоставить вам лучший опыт на нашем сайте.",
-    "disclaimer": "Продолжая использовать сайт, вы соглашаетесь с использованием всех cookies на сайте allver.az."
-  },
-  "mapSection": {
-    "location": "Адрес",
-    "inner_map_title": "Внутренняя карта торгового центра"
-  },
-  "shoppingCenters": {
-    "title": "Торговые центры",
-    "subtitle": "Легко просматривайте категории торговцев.",
-    "centers": {
-      "center_1": {
-        "name": "Торговый центр Седерек",
-        "description": "Легко просматривайте категории торговцев."
-      },
-      "center_2": {
-        "name": "Торговый центр Бина",
-        "description": "Легко просматривайте категории торговцев."
-      },
-      "center_3": {
-        "name": "Торговый центр Абшерон",
-        "description": "Легко просматривайте категории торговцев."
-      }
-    }
+    "message": "We use cookies to ensure you get the best experience on WinxFit.",
+    "disclaimer": "By continuing, you agree to our cookie policy on winxfit.az."
   },
   "buttons": {
-    "register_now": "Зарегистрироваться сейчас",
-    "about_us": "О нас",
-    "contact_us": "Связаться с нами",
-    "read_more": "Подробнее",
-    "send_now": "Отправить",
-    "join_the_list": "Присоединиться к списку",
-    "sending": "Отправляется",
-    "decline": "Отказаться",
-    "accept": "Принять",
-    "share": "Поделиться"
+    "join_the_list": "Join the Waitlist",
+    "early_access": "Sign Up for Early Access",
+    "register_now": "Register Now",
+    "about_us": "About Us",
+    "contact_us": "Contact Us",
+    "read_more": "Read More",
+    "send_now": "Send Message",
+    "sending": "Sending...",
+    "decline": "Decline",
+    "accept": "Accept",
+    "share": "Share"
   },
   "form": {
-    "name": "Ваше полное имя",
-    "name_placeholder": "Введите ваше имя",
-    "email": "Электронная почта",
-    "email_placeholder": "Введите вашу почту",
-    "message": "Ваше сообщение",
-    "message_placeholder": "Введите ваше сообщение",
-    "trade_center": "Торговый центр",
-    "select": "Выбрать",
-    "required": "Это поле обязательно для заполнения"
-  },
-  "payment": {
-    "success_message": "Операция успешно завершена",
-    "failure_message": "Операция не удалась"
+    "name": "Name and Surname",
+    "name_placeholder": "Enter your full name",
+    "email": "Email",
+    "email_placeholder": "Enter your email address",
+    "message": "Your Message",
+    "message_placeholder": "Type your message here",
+    "select": "Select",
+    "required": "This field is required"
   }
 }
