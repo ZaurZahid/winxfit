@@ -5,18 +5,8 @@ import Facebook from "../ui/icons/Facebook";
 import Linkedin from "../ui/icons/Linkedin";
 import { formatDate } from "../../hooks/formatDate";
 
-function BlogDetail() {
+function BlogDetail({ post }) {
   const { t } = useTranslation("common");
-  const post = {
-    id: 101,
-    title: "1Gold Prices Reach Record Highs",
-    created_at: "2025-10-20T09:15:00Z",
-    image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
-    short_content:
-      "Global gold prices surged this week due to market volatility.",
-    content:
-      '<article><h1>Gold Prices Reach Record Highs</h1><p>Gold prices have reached a new record high this week as investors seek safe-haven assets amid economic uncertainty. <strong>Analysts predict further growth</strong> if inflation continues to rise.</p><p>Read more on the market <a href="https://example.com/markets">here</a>.</p></article>',
-  };
 
   const shareToSocial = (platform) => {
     const url = encodeURIComponent(window.location.href);
