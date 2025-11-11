@@ -28,7 +28,8 @@ const blogsMock = {
       id: 203,
       title: "Why Verification Matters in Skill-Based Fitness Apps",
       created_at: "2025-10-19T08:30:00Z",
-      image: "https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg",
+      image:
+        "https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg",
       short_content:
         "Verified data keeps competitions fair, transparent, and trusted by all players.",
       content:
@@ -38,7 +39,8 @@ const blogsMock = {
       id: 204,
       title: "From Steps to Streaks: Building Consistency with WinxFit",
       created_at: "2025-10-18T17:45:00Z",
-      image: "https://images.pexels.com/photos/4140291/pexels-photo-4140291.jpeg",
+      image:
+        "https://images.pexels.com/photos/4140291/pexels-photo-4140291.jpeg",
       short_content:
         "Learn how streaks, milestones, and daily syncs turn movement into a winning routine.",
       content:
@@ -48,7 +50,8 @@ const blogsMock = {
       id: 205,
       title: "Creating Custom Competitions: A Playbook for Premium Hosts",
       created_at: "2025-10-18T10:00:00Z",
-      image: "https://images.pexels.com/photos/3764012/pexels-photo-3764012.jpeg",
+      image:
+        "https://images.pexels.com/photos/3764012/pexels-photo-3764012.jpeg",
       short_content:
         "Premium users can set rules, entry limits, and prize structures for tailored events.",
       content:
@@ -58,7 +61,8 @@ const blogsMock = {
       id: 206,
       title: "How Teams Multiply Motivation in Fitness Rewards Apps",
       created_at: "2025-10-17T19:20:00Z",
-      image: "https://images.pexels.com/photos/1431283/pexels-photo-1431283.jpeg",
+      image:
+        "https://images.pexels.com/photos/1431283/pexels-photo-1431283.jpeg",
       short_content:
         "Team formats boost accountability, enjoyment, and long-term retention.",
       content:
@@ -68,7 +72,8 @@ const blogsMock = {
       id: 207,
       title: "The Psychology of Earning While Exercising",
       created_at: "2025-10-17T07:40:00Z",
-      image: "https://images.pexels.com/photos/4140293/pexels-photo-4140293.jpeg",
+      image:
+        "https://images.pexels.com/photos/4140293/pexels-photo-4140293.jpeg",
       short_content:
         "Small financial incentives amplify motivation without replacing intrinsic goals.",
       content:
@@ -78,7 +83,8 @@ const blogsMock = {
       id: 208,
       title: "Data Privacy in Fitness Apps: What WinxFit Gets Right",
       created_at: "2025-10-16T15:10:00Z",
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
+      image:
+        "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
       short_content:
         "Encryption, minimal access, and clear purpose make your data safer.",
       content:
@@ -88,7 +94,8 @@ const blogsMock = {
       id: 209,
       title: "Picking the Right Challenge for Your Fitness Level",
       created_at: "2025-10-15T09:35:00Z",
-      image: "https://images.pexels.com/photos/2294353/pexels-photo-2294353.jpeg",
+      image:
+        "https://images.pexels.com/photos/2294353/pexels-photo-2294353.jpeg",
       short_content:
         "Match events to your current routine to maximize progress and earnings.",
       content:
@@ -108,7 +115,8 @@ const blogsMock = {
       id: 211,
       title: "Walking, Running, or Cycling: Which Pays You Best?",
       created_at: "2025-10-14T07:30:00Z",
-      image: "https://images.pexels.com/photos/161172/pexels-photo-161172.jpeg",
+      image:
+        "https://images.pexels.com/photos/9602276/pexels-photo-9602276.jpeg",
       short_content:
         "Choose a modality that you’ll sustain and sync daily for reliable rewards.",
       content:
@@ -138,7 +146,8 @@ const blogsMock = {
       id: 214,
       title: "Micro-Habits That Boost Your Daily Points",
       created_at: "2025-10-11T19:50:00Z",
-      image: "https://images.pexels.com/photos/1093833/pexels-photo-1093833.jpeg",
+      image:
+        "https://images.pexels.com/photos/14921377/pexels-photo-14921377.jpeg",
       short_content:
         "Five-minute walks, staircase choices, and calendar reminders add up fast.",
       content:
@@ -158,7 +167,8 @@ const blogsMock = {
       id: 216,
       title: "Cash vs. Perks: Which Reward Motivates You More?",
       created_at: "2025-10-10T13:20:00Z",
-      image: "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg",
+      image:
+        "https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg",
       short_content:
         "Different rewards drive different behaviors; mix them to keep motivation high.",
       content:
@@ -168,7 +178,8 @@ const blogsMock = {
       id: 217,
       title: "Office Wellness: Run a Company Challenge That Actually Works",
       created_at: "2025-10-09T18:55:00Z",
-      image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+      image:
+        "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
       short_content:
         "Use simple rules, inclusive goals, and transparent rewards to engage everyone.",
       content:
@@ -188,7 +199,8 @@ const blogsMock = {
       id: 219,
       title: "Avoiding Burnout in Competitive Fitness Apps",
       created_at: "2025-10-07T12:10:00Z",
-      image: "https://images.pexels.com/photos/3757957/pexels-photo-3757957.jpeg",
+      image:
+        "https://images.pexels.com/photos/3757957/pexels-photo-3757957.jpeg",
       short_content:
         "Balance intensity with recovery and use streaks wisely to stay healthy.",
       content:
@@ -198,7 +210,8 @@ const blogsMock = {
       id: 220,
       title: "From First Cashout to Long-Term Fitness Habit",
       created_at: "2025-10-06T08:40:00Z",
-      image: "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg",
+      image:
+        "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg",
       short_content:
         "Turn your first payout into a repeatable routine with simple systems.",
       content:
