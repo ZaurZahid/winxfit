@@ -30,12 +30,12 @@ export default function Membership() {
               <img
                 src="/membership-top-left.png"
                 alt="membership-top-left"
-                className="absolute -top-16 sm:-top-10 -left-6 sm:-left-8 lg:-left-2 2xl:-left-24 z-10 h-16 lg:h-20 2xl:h-16 animate-float-left"
+                className="absolute -top-16 sm:-top-10 -left-6 sm:-left-8 lg:-left-24 2xl:-left-24 z-10 h-16 lg:h-20 2xl:h-16 animate-float-left"
               />
               <img
                 src="/membership-top-right.png"
                 alt="membership-top-right"
-                className="absolute -top-10 sm:-top-5 -right-10 sm:-right-12 lg:-right-8 2xl:-right-28 z-10 h-12 lg:h-16 2xl:h-12 animate-float-right"
+                className="absolute -top-10 sm:-top-5 -right-10 sm:-right-12 lg:-right-32 2xl:-right-28 z-10 h-12 lg:h-16 2xl:h-12 animate-float-right"
               />
             </h1>
 
@@ -55,7 +55,7 @@ export default function Membership() {
                     </div>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl sm:text-4xl font-bold text-gray-900">
-                        79.9$
+                        99.9£
                       </span>
                       <span className="text-sm text-gray-600">
                         {t("membership.billed_yearly")}
@@ -94,7 +94,7 @@ export default function Membership() {
                     </div>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl sm:text-4xl font-bold text-gray-900">
-                        7.99$
+                        19.99£
                       </span>
                       <span className="text-sm text-gray-600">
                         {t("membership.billed_monthly")}
