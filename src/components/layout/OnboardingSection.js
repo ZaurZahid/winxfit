@@ -36,47 +36,38 @@ function OnboardingSection() {
     }));
 
     try {
-      console.log(formState);
-      // const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/support/contact/`, {
-      //     method: 'POST',
-      //     headers: { 'Content-Type': 'application/json', 'Accept-Language': i18n?.language || 'az' },
-      //     body: JSON.stringify({
-      //         fullname: formState.name,
-      //         email: formState.email,
-      //         phone: formattedPhone,
-      //         message: formState.message,
-      //     }),
-      // });
+      const res = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fullname: formState.fullname.trim(),
+          email: formState.email.trim(),
+        }),
+      });
 
-      // if (!response.ok) {
-      //     if (response.status === 422) {
-      //         const errorData = await response.json();
-      //         setFormState((prevState) => ({
-      //             ...prevState,
-      //             errors: {
-      //                 name: errorData.fullname?.[0] || null,
-      //                 email: errorData.email?.[0] || null,
-      //                 phone: errorData.phone?.[0] || null,
-      //                 message: errorData.message?.[0] || null,
-      //             },
-      //             loading: false,
-      //         }));
-      //     } else {
-      //         throw new Error('Unexpected error');
-      //     }
-      //     return;
-      // }
+      const data = await res.json();
 
-      setTimeout(() => {
-        setFormState({
-          fullname: "",
-          email: "",
-          message: "",
-          errors: {},
+      if (!res.ok) {
+        const { errors } = data;
+
+        setFormState((prevState) => ({
+          ...prevState,
+          errors: {
+            fullname: errors?.fullname || null,
+            email: errors?.email || null,
+          },
           loading: false,
-          successMessage: t("joinListModal.success_message.title"),
-        });
-      }, 2000);
+        }));
+        return;
+      }
+
+      setFormState({
+        fullname: "",
+        email: "",
+        errors: {},
+        loading: false,
+        successMessage: t("joinListModal.success_message.title"),
+      });
     } catch (error) {
       console.error("Error sending contact message:", error);
       setFormState((prevState) => ({ ...prevState, loading: false }));
@@ -130,7 +121,7 @@ function OnboardingSection() {
                     IconComponent={
                       <UserIcon
                         strokeColor={
-                          formState.errors.name
+                          formState.errors.fullname
                             ? "stroke-red-400"
                             : "stroke-current"
                         }
@@ -153,7 +144,9 @@ function OnboardingSection() {
                     }
                     type="submit"
                     disabled={formState.loading || hasErrors()}
-                    classes={`md:ml-8 text-white bg-black hover:bg-orange min-w-fit h-14 mt-auto`}
+                    classes={`md:ml-8 text-white bg-black hover:bg-orange min-w-fit h-14 mt-auto ${
+                      hasErrors() ? "mt-5 sm:mt-auto sm:mb-5" : ""
+                    }`}
                   />
                 </div>
 

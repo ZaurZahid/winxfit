@@ -42,49 +42,38 @@ const JoinForm = ({ onSuccess }) => {
     }));
 
     try {
-      console.log(formState);
-      // const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/v1/support/contact/`, {
-      //     method: 'POST',
-      //     headers: { 'Content-Type': 'application/json', 'Accept-Language': i18n?.language || 'az' },
-      //     body: JSON.stringify({
-      //         fullname: formState.name,
-      //         email: formState.email,
-      //         phone: formattedPhone,
-      //         message: formState.message,
-      //     }),
-      // });
+      const res = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fullname: formState.fullname.trim(),
+          email: formState.email.trim(),
+        }),
+      });
 
-      // if (!response.ok) {
-      //     if (response.status === 422) {
-      //         const errorData = await response.json();
-      //         setFormState((prevState) => ({
-      //             ...prevState,
-      //             errors: {
-      //                 name: errorData.fullname?.[0] || null,
-      //                 email: errorData.email?.[0] || null,
-      //                 phone: errorData.phone?.[0] || null,
-      //                 message: errorData.message?.[0] || null,
-      //             },
-      //             loading: false,
-      //         }));
-      //     } else {
-      //         throw new Error('Unexpected error');
-      //     }
-      //     return;
-      // }
+      const data = await res.json();
 
-      setTimeout(() => {
-        if (onSuccess) onSuccess();
+      if (!res.ok) {
+        const { errors } = data;
 
-        setFormState({
-          fullname: "",
-          email: "",
-          message: "",
-          errors: {},
+        setFormState((prevState) => ({
+          ...prevState,
+          errors: {
+            fullname: errors?.fullname || null,
+            email: errors?.email || null,
+          },
           loading: false,
-          successMessage: t("joinListModal.success_message.title"),
-        });
-      }, 2000);
+        }));
+        return;
+      }
+
+      setFormState({
+        fullname: "",
+        email: "",
+        errors: {},
+        loading: false,
+        successMessage: t("joinListModal.success_message.title"),
+      });
     } catch (error) {
       console.error("Error sending contact message:", error);
       setFormState((prevState) => ({ ...prevState, loading: false }));
@@ -120,7 +109,7 @@ const JoinForm = ({ onSuccess }) => {
           IconComponent={
             <UserIcon
               strokeColor={
-                formState.errors.name ? "stroke-red-400" : "stroke-current"
+                formState.errors.fullname ? "stroke-red-400" : "stroke-current"
               }
             />
           }
@@ -141,7 +130,9 @@ const JoinForm = ({ onSuccess }) => {
           }
           type="submit"
           disabled={formState.loading || hasErrors()}
-          classes={`mt-6 md:mt-auto md:ml-8 text-white bg-black hover:bg-orange min-w-fit h-14`}
+          classes={`mt-6 md:mt-auto md:ml-8 text-white bg-black hover:bg-orange min-w-fit h-14 ${
+            hasErrors() ? "mt-5 sm:mt-auto sm:mb-[22px]" : ""
+          }`}
         />
       </div>
 
