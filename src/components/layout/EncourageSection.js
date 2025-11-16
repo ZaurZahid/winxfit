@@ -42,7 +42,7 @@ function EncourageSection() {
                       <img
                         src="/transparency.png"
                         alt="transparency"
-                        className="w-10 h-10 transition-transform group-hover:scale-110"
+                        className="w-11 h-11 transition-transform group-hover:scale-110"
                       />
                     </div>
                     <span className="font-semibold text-base md:text-lg">
@@ -53,9 +53,9 @@ function EncourageSection() {
                   <div className="bg-white rounded-2xl p-4 group flex flex-col transition-transform">
                     <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center mb-3 transition-all bg-[#F5F5F5] group-hover:shadow-lg">
                       <img
-                        src="/transparency.png"
-                        alt="transparency"
-                        className="w-10 h-10 transition-transform group-hover:scale-110"
+                        src="/accessibility.png"
+                        alt="accessibility"
+                        className="w-11 h-11 transition-transform group-hover:scale-110"
                       />
                     </div>
                     <span className="font-semibold text-base md:text-lg">
@@ -66,9 +66,9 @@ function EncourageSection() {
                   <div className="bg-white rounded-2xl p-4 group flex flex-col transition-transform">
                     <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center mb-3 transition-all bg-[#F5F5F5] group-hover:shadow-lg">
                       <img
-                        src="/transparency.png"
-                        alt="transparency"
-                        className="w-10 h-10 transition-transform group-hover:scale-110"
+                        src="/community.png"
+                        alt="community"
+                        className="w-11 h-11 transition-transform group-hover:scale-110"
                       />
                     </div>
                     <span className="font-semibold text-base md:text-lg">
