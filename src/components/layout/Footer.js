@@ -70,7 +70,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between space-y-4 lg:space-y-0 mt-12 lg:mt-10">
             <div className="text-left mb-2 lg:mb-0">
               {t("footer.copyright")} @{currentYear},{" "}
-              <span className="font-semibold">WinxFIt</span>
+              <span className="font-semibold">WinxFit</span>
             </div>
 
             <div className="flex flex-col lg:flex-row lg:items-center lg:space-x-8 space-y-4 lg:space-y-0">

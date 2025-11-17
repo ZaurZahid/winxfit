@@ -55,7 +55,7 @@ export default function Membership() {
                     </div>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl sm:text-4xl font-bold text-gray-900">
-                        99.9£
+                        £199.9
                       </span>
                       <span className="text-sm text-gray-600">
                         {t("membership.billed_yearly")}
@@ -94,7 +94,7 @@ export default function Membership() {
                     </div>
                     <div className="flex items-baseline gap-1">
                       <span className="text-3xl sm:text-4xl font-bold text-gray-900">
-                        19.99£
+                        £19.99
                       </span>
                       <span className="text-sm text-gray-600">
                         {t("membership.billed_monthly")}
