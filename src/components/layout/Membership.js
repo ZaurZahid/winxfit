@@ -137,12 +137,12 @@ export default function Membership() {
               <img
                 src="/tick-top.png"
                 alt="tick top"
-                className="absolute -top-1 -left-2 lg:-left-1 z-10 h-5"
+                className="absolute -top-1 -left-2 lg:-left-12 z-10 h-5"
               />
               <img
                 src="/tick-bottom.png"
                 alt="tick bottom"
-                className="absolute -bottom-1 -right-3 sm:right-72 lg:right-32 z-10 h-5"
+                className="absolute -bottom-1 right-24 sm:right-32 lg:right-8 z-10 h-5"
               />
             </h3>
 
